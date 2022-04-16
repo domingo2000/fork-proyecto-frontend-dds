@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import LocalPickUpCard from './LocalPickUpCard'
+import { Link } from 'react-router-dom';
 
 const locals = [
   {
@@ -41,7 +42,7 @@ function PickUpForm() {
       </div>
 
       <div className='submit-button'>
-        <button className='submit-button'>Submit</button>
+        <Link to='/checkout-completed' className='submit'>Submit</Link>
       </div>
     </div>
   )

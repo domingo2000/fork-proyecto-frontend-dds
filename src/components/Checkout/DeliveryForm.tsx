@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function DeliveryForm() {
   return (
@@ -21,7 +22,7 @@ function DeliveryForm() {
       </div>
 
       <div className='submit-button'>
-        <button>Submit</button>
+        <Link to='/checkout-completed' className='submit'>Submit</Link>
       </div>
     </div>
   )

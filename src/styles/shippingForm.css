@@ -53,8 +53,8 @@
   margin-top: 20px;
 }
 
-.delivery-form button,
-.pickup-form button.submit-button {
+.delivery-form a.submit,
+.pickup-form a.submit {
   background-color: #06c;
   color: #fff;
   width: 50%;
@@ -63,6 +63,10 @@
   font-size: 19px;
   border: 0;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pickup-locals {
