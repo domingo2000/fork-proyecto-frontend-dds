@@ -1,0 +1,133 @@
+.bag-main {
+  width: 60%;
+  min-height: 80vh;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.bag-title {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.bag-product {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d2d2d7;
+  margin-top: 50px;
+}
+
+.bag-product-image {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bag-product img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.bag-product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.bag-product-info h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  max-width: 350px;
+  text-align: start;
+}
+
+.bag-product-title {
+  display: flex;
+  width: 50%;
+  justify-content: left;
+  text-align: left;
+}
+
+.bag-product-info .end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 150px;
+}
+
+.bag-product-info button {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  color: #06c;
+  max-height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.bag-product-info .product-qty {
+  display: flex;
+}
+
+.bag-total {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 100%;
+}
+
+.bag-total table {
+  width: 50%;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.bag-total .description {
+  width: 50%;
+  font-size: 18px;
+}
+
+.bag-total .value {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.bag-total td {
+  height: 32px;
+}
+
+.bag-total .total {
+  margin-top:15px;
+}
+
+.checkout-button {
+  width: 30%;
+  background-color: #06c;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  align-self: flex-end;
+}
