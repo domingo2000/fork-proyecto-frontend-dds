@@ -36,7 +36,7 @@
   line-height: 1.7;
 }
 
-.product-info button {
+.product-info .submit-button {
   width: 100%;
   cursor: pointer;
   text-align: center;
@@ -49,6 +49,7 @@
   border-radius: 4px;
   align-self: flex-end;
   margin-top: 10%;
+  text-decoration: none;
 }
 
 .image-banner-main {

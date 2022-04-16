@@ -1,0 +1,98 @@
+
+.delivery-form,
+.pickup-form {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.delivery-form .title,
+.pickup-form .title {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 17px 13px 0 0;
+}
+
+.general-info, 
+.contact-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.delivery-form input {
+  width: 100%;
+  min-height: 50px;
+  font-size: 17px;
+  padding: 10px;
+  margin: 5px 0;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid #d2d2d7;
+}
+
+.delivery-form .address-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-form .address-info input {
+  width: 49%;
+}
+
+.delivery-form .submit-button,
+.pickup-form .submit-button {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.delivery-form button,
+.pickup-form button.submit-button {
+  background-color: #06c;
+  color: #fff;
+  width: 50%;
+  min-height: 40px;
+  border-radius: 10px;
+  font-size: 19px;
+  border: 0;
+  cursor: pointer;
+}
+
+.pickup-locals {
+  width: 40%;
+}
+
+.local-pickup-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  border: 2px solid #d2d2d7;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.local-pickup-card .local-name {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.local-pickup-card .local-address {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.local-pickup-card.active {
+  border: 2px solid #06c;
+}
