@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ProductInfo() {
   return (
@@ -14,7 +15,7 @@ function ProductInfo() {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, optio quaerat ex inventore nostrum eius distinctio laboriosam dolor mollitia accusantium, placeat qui, tempora aut hic. Sint doloremque reprehenderit perferendis temporibus.
       </div>
 
-      <button>Add to Bag</button>
+      <Link to='/bag' className='submit-button'>Add to Bag</Link>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import BagProduct from '../../components/Bag/BagProduct'
+import { Link } from 'react-router-dom';
 
 const initialProducts = [
   {
@@ -82,7 +83,7 @@ function Bag() {
         <h1 className='total'>Total: ${Math.round(total * 1.19 * 100) / 100}</h1>
       </div>
 
-      <button className='checkout-button'>Check Out</button>
+      <Link to='/checkout' className='checkout-button'>Check Out</Link>
     </div>
   )
 }
