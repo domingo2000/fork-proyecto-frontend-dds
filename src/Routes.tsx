@@ -8,6 +8,7 @@ import TricksNew from './views/TricksNew';
 import ProductCheckout from './views/checkout/ProductCheckout';
 import Bag from './views/checkout/Bag';
 import BagCheckout from './views/checkout/BagCheckout';
+import CheckoutCompleted from './views/checkout/CheckoutCompleted';
 
 export default function Router() {
   return (
@@ -26,6 +27,7 @@ export default function Router() {
         <Route path="/orders" element={<OrderIndex />} />
         <Route path="/bag" element={<Bag />} />
         <Route path="/checkout" element={<BagCheckout />} />
+        <Route path="/checkout-completed" element={<CheckoutCompleted />} />
       </Routes>
     </BrowserRouter>
   );
