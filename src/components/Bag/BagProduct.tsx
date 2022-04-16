@@ -8,7 +8,7 @@ interface IProduct {
   img: string
 }
 
-function BagProduct({product, changeTotal, deleteProduct}: {product: IProduct, changeTotal: (amount: number) => void, deleteProduct: (id: number) => void}) {
+function BagProduct({product, changeProductAmount, deleteProduct}: {product: IProduct, changeProductAmount: (productId: number, amount: number) => void, deleteProduct: (id: number) => void}) {
   const [productQty, setProductQty] = useState(product.qty)
 
   return (
@@ -24,13 +24,13 @@ function BagProduct({product, changeTotal, deleteProduct}: {product: IProduct, c
           <button onClick={() => {
               if (productQty - 1 < 1) { return }
               setProductQty(productQty - 1);
-              changeTotal(-product.price);
+              changeProductAmount(product.id, -1);
             }
           }>-</button>
           <h1>{productQty}</h1>
           <button onClick={() => {
               setProductQty(productQty + 1);
-              changeTotal(product.price);
+              changeProductAmount(product.id, +1);
             }
           }>+</button>
         </div>

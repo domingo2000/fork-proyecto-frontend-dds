@@ -40,10 +40,18 @@ function Bag() {
 
   const deleteProduct = (id: number) => {
     setProducts(products.filter(product => product.id !== id));
+    console.log(products);
   }
 
-  const changeTotal = (amount: number) => {
-    setTotal(total + amount);
+  const changeProductAmount = (productId: number, amount: number) => {
+    const newProducts = products.map(product => {
+      if (product.id === productId) {
+        product.qty += amount;
+      }
+      return product;
+    });
+    setProducts(newProducts);
+    console.log(products)
   }
 
   return (
@@ -51,8 +59,8 @@ function Bag() {
       <div className='bag-title'>
         <h1>Review your bag.</h1>
       </div>
-      {products.map((product, index) => (
-        <BagProduct key={index} product={product} changeTotal={changeTotal} deleteProduct={deleteProduct}/>
+      {products.map((product) => (
+        <BagProduct key={product.id} product={product} changeProductAmount={changeProductAmount} deleteProduct={deleteProduct}/>
       ))}
       <div className="bag-total">
         <table>
