@@ -5,6 +5,8 @@ import ProductIndex from './views/ProductsIndex';
 import Home from './views/Home';
 import OrderIndex from './views/OrdersIndex';
 import TricksNew from './views/TricksNew';
+import ProductCheckout from './views/checkout/ProductCheckout';
+import Bag from './views/checkout/Bag';
 
 export default function Router() {
   return (
@@ -16,10 +18,12 @@ export default function Router() {
           <Route path=":id" element={<div>
             Hola
             </div>} />
+          <Route path=":id/checkout" element={<ProductCheckout />}/>
           <Route path="new" element={<TricksNew />} />
           <Route index element={<ProductIndex />} />
         </Route>
         <Route path="/orders" element={<OrderIndex />} />
+        <Route path="/bag" element={<Bag />} />
       </Routes>
     </BrowserRouter>
   );
