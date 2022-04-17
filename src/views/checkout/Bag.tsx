@@ -1,58 +1,50 @@
 import React, { useState, useEffect } from 'react'
 import BagProduct from '../../components/Bag/BagProduct'
 import { Link } from 'react-router-dom';
+import { Cart as ICart } from '../../interfaces/cart'; 
 
-const initialProducts = [
-  {
-    id: 0,
-    title: 'Airpods (3rd generation)',
-    price: 179.00,
-    qty: 1,
-    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000', 
-  },
-  {
-    id: 1,
-    title: '10.9-inch iPad Air Wi-Fi 64GB - Space Gray',
-    price: 599.00,
-    qty: 1,
-    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664',
-  },
-  {
-    id: 2,
-    title: 'iPhone 13 Pro 128GB Alpine Green',
-    price: 999.00,
-    qty: 1,
-    img: 'https://www.apple.com/v/iphone/home/bf/images/overview/compare/compare_iphone_13_pro__bpn3x8hs692a_large.jpg',
-  }
-
-]
+const emptyCart = {
+  id: 1,
+  created_at: new Date(),
+  updated_at: new Date(),
+  line_items: [],
+}
 
 function Bag() {
+  if (localStorage.getItem('cart') === null) {
+    localStorage.setItem('cart', JSON.stringify(emptyCart));
+  }
+  const initialCart = JSON.parse(localStorage.getItem('cart') as string);
   const [total, setTotal] = useState(0);
-  const [products, setProducts] = useState(initialProducts);
+  const [cart, setCart] = useState<ICart>(initialCart);
 
   useEffect(() => {
     let total = 0;
-    products.forEach(product => {
-      total += product.price * product.qty;
+    cart.line_items.forEach(line_item => {
+      total += line_item.product.price * line_item.amount;
     });
     setTotal(total);
-  }, [products]);
+  }, [cart]);
 
   const deleteProduct = (id: number) => {
-    setProducts(products.filter(product => product.id !== id));
-    console.log(products);
+    const line_items = cart.line_items.filter(item => item.product.id !== id);
+    setCart({
+      ...cart,
+      line_items,
+    });
   }
 
   const changeProductAmount = (productId: number, amount: number) => {
-    const newProducts = products.map(product => {
-      if (product.id === productId) {
-        product.qty += amount;
+    const newProducts = cart.line_items.map(item => {
+      if (item.product.id === productId) {
+        item.amount += amount;
       }
-      return product;
+      return item;
     });
-    setProducts(newProducts);
-    console.log(products)
+    setCart({
+      ...cart,
+      line_items: newProducts,
+    });
   }
 
   return (
@@ -60,8 +52,8 @@ function Bag() {
       <div className='bag-title'>
         <h1>Review your bag.</h1>
       </div>
-      {products.map((product) => (
-        <BagProduct key={product.id} product={product} changeProductAmount={changeProductAmount} deleteProduct={deleteProduct}/>
+      {cart.line_items.map((item) => (
+        <BagProduct key={item.product.id} item={item} changeProductAmount={changeProductAmount} deleteProduct={deleteProduct}/>
       ))}
       <div className="bag-total">
         <table>

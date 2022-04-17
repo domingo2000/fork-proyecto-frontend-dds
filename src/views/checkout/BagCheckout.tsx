@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
 import DeliveryForm from '../../components/Checkout/DeliveryForm';
 import PickUpForm from '../../components/Checkout/PickUpForm';
+import { Cart as ICart } from '../../interfaces/cart';
 
 function BagCheckout() {
   const [shippingMethod, setShippingMethod] = useState('delivery');
   const deliveryBox = useRef<HTMLButtonElement>(document.createElement('button'));
   const pickupBox = useRef<HTMLButtonElement>(document.createElement('button'));
+  const [cart, setCart] = useState<ICart>(JSON.parse(localStorage.getItem('cart') as string));
 
   useEffect(() => {
     if (shippingMethod === 'delivery') {
