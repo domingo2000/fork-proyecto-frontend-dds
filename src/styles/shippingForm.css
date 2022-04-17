@@ -53,8 +53,8 @@
   margin-top: 20px;
 }
 
-.delivery-form a.submit,
-.pickup-form a.submit {
+.delivery-form button.submit,
+.pickup-form button.submit {
   background-color: #06c;
   color: #fff;
   width: 50%;

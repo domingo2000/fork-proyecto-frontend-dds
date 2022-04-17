@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react'
 import LocalPickUpCard from './LocalPickUpCard'
-import { Link } from 'react-router-dom';
+import { emptyCart } from '../../utils/emptyCart';
+
+const checkOut = () => {
+  localStorage.setItem('cart', JSON.stringify(emptyCart));
+  window.location.href = '/checkout-completed';
+}
 
 const locals = [
   {
@@ -42,7 +47,7 @@ function PickUpForm() {
       </div>
 
       <div className='submit-button'>
-        <Link to='/checkout-completed' className='submit'>Submit</Link>
+        <button className='submit' onClick={() => checkOut()}>Submit</button>
       </div>
     </div>
   )

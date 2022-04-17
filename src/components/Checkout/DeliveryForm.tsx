@@ -1,5 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { emptyCart } from '../../utils/emptyCart'
+
+const checkOut = () => {
+  localStorage.setItem('cart', JSON.stringify(emptyCart));
+  window.location.href = '/checkout-completed';
+}
 
 function DeliveryForm() {
   return (
@@ -22,7 +27,7 @@ function DeliveryForm() {
       </div>
 
       <div className='submit-button'>
-        <Link to='/checkout-completed' className='submit'>Submit</Link>
+        <button className='submit' onClick={() => checkOut()}>Submit</button>
       </div>
     </div>
   )

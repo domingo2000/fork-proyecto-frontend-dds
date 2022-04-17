@@ -2,13 +2,7 @@ import React, { useState, useEffect } from 'react'
 import BagProduct from '../../components/Bag/BagProduct'
 import { Link } from 'react-router-dom';
 import { Cart as ICart } from '../../interfaces/cart'; 
-
-const emptyCart = {
-  id: 1,
-  created_at: new Date(),
-  updated_at: new Date(),
-  line_items: [],
-}
+import { emptyCart } from '../../utils/emptyCart';
 
 function Bag() {
   if (localStorage.getItem('cart') === null) {
@@ -24,6 +18,7 @@ function Bag() {
       total += line_item.product.price * line_item.amount;
     });
     setTotal(total);
+    localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
   const deleteProduct = (id: number) => {

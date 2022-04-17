@@ -7,7 +7,8 @@ function BagCheckout() {
   const [shippingMethod, setShippingMethod] = useState('delivery');
   const deliveryBox = useRef<HTMLButtonElement>(document.createElement('button'));
   const pickupBox = useRef<HTMLButtonElement>(document.createElement('button'));
-  const [cart, setCart] = useState<ICart>(JSON.parse(localStorage.getItem('cart') as string));
+  const [cart] = useState<ICart>(JSON.parse(localStorage.getItem('cart') as string));
+  const total = cart.line_items.reduce((acc, item) => acc + item.product.price * item.amount, 0);
 
   useEffect(() => {
     if (shippingMethod === 'delivery') {
@@ -24,7 +25,7 @@ function BagCheckout() {
     <div className='bag-checkout'>
       <div className='bag-checkout-order-summary'>
         <h3> Checkout </h3>
-        <h4> Order Summary: $197.00 </h4>
+        <h4> Order Summary: ${total*1.19} </h4>
       </div>
       <div className='bag-checkout-shipping-method'>
         <h1 className='title'>How would you like to get your order?</h1>
