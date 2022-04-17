@@ -1,9 +1,11 @@
-import React from 'react'
-import ImageSelector from './ImageSelector'
-import { useRef, useState, useEffect } from 'react'
+import React from 'react';
+import ImageSelector from './ImageSelector';
+import { useRef, useState, useEffect } from 'react';
+import { Product as IProduct } from '../../interfaces/product';
 
-function ImageBanner() {
-  const [selectedImageURL, setSelectedImageURL] = useState<string>('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV5?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1633733312000');
+
+function ImageBanner({product}: {product: IProduct}) {
+  const [selectedImageURL, setSelectedImageURL] = useState<string>(product.images[0].url);
   const mainImageRef = useRef<HTMLImageElement>(null);
   
   useEffect(() => {
@@ -16,7 +18,7 @@ function ImageBanner() {
     <div className='image-banner-main'>
       <img src=""
           alt="main product" className='main-image' ref={mainImageRef}/>
-      <ImageSelector setSelectedImageURL={setSelectedImageURL} />
+      <ImageSelector setSelectedImageURL={setSelectedImageURL} images={product.images}/>
     </div>
   )
 }

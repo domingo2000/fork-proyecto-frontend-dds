@@ -1,21 +1,42 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Product as IProduct } from '../../interfaces/product';
+import { LineItem as ILineItem } from '../../interfaces/lineItem';
 
-function ProductInfo() {
+const addToBag = (product: IProduct) => {
+  const cart = JSON.parse(localStorage.getItem('cart') as string);
+  let wasInCart = false;
+  const line_items = cart.line_items.map((item: ILineItem) => {
+    if (item.product.id === product.id) {
+      item.amount += 1;
+      wasInCart = true;
+    }
+    return item;
+  });
+  if (!wasInCart) {
+    line_items.push({
+      product,
+      amount: 1,
+    });
+  }
+  cart.line_items = line_items;
+  localStorage.setItem('cart', JSON.stringify(cart));
+  window.location.href = '/bag';
+}
+
+function ProductInfo({product}: {product: IProduct}) {
   return (
     <div className='product-info'>
       <div className='product-info-title'>
-        <h1>Product Info</h1>
+        <h1>{product.name}</h1>
       </div>
       <div className='product-info-price'>
-        $179.00
+        ${product.price}.00
       </div>
       <div className='product-info-description'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eius, qui excepturi nobis, temporibus nostrum odio totam porro assumenda, debitis eveniet! Est, optio omnis delectus libero eius quo commodi modi.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, optio quaerat ex inventore nostrum eius distinctio laboriosam dolor mollitia accusantium, placeat qui, tempora aut hic. Sint doloremque reprehenderit perferendis temporibus.
+        {product.description}
       </div>
 
-      <Link to='/bag' className='submit-button'>Add to Bag</Link>
+      <button onClick={() => addToBag(product)} className='submit-button'>Add to Bag</button>
     </div>
   )
 }
