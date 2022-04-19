@@ -9,6 +9,9 @@ function BagProduct({item, changeProductAmount, deleteProduct}: {item: LineItem,
       <div className='bag-product-image'>
         <img src={item.product.images[0].url} alt={item.product.name}/>
       </div>
+      <div id='mobile-product-title'>
+        <h1>{item.product.name}</h1>
+      </div>
       <div className='bag-product-info'>
         <div className="bag-product-title">
           <h1>{item.product.name}</h1>

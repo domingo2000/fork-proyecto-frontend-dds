@@ -18,6 +18,9 @@ function ProductCheckout() {
       {loading && <div>Loading...</div>}
       {!loading && <ProductInfo product={product}/>}
       {!loading && <ImageBanner product={product}/>}
+      {!loading && <div className='product-info-title' id='mobile-title'>
+        <h1>{product.name}</h1>
+      </div>}
     </div>
   )
 }

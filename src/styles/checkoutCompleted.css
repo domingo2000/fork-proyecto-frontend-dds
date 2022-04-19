@@ -120,4 +120,15 @@
 }
 
 
-
+@media screen and (max-width: 768px) {
+  .checkout-completed-main {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .checkout-completed-main .title {
+    margin: 40px 0px;
+  }
+  .receipt table.receipt-total {
+    padding-left: 50%;
+  }
+}

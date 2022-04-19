@@ -132,3 +132,49 @@
   align-self: flex-end;
   text-decoration: none;
 }
+
+#mobile-product-title {
+  display: none;
+}
+
+@media screen and (max-width: 1324px) and (min-width: 728px) {
+  .bag-main {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .bag-product-info h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .bag-main {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .bag-product-title {
+    display: none;
+  }
+  .bag-product h1 {
+    font-size: 18px;
+  }
+  .bag-product-info .end {
+    min-width: 0;
+  }
+  .bag-product-image {
+    width: 35%;
+  }
+  .bag-product-info {
+    width: 65%;
+  }
+
+  .checkout-button {
+    width:60%;
+  }
+
+  .bag-product-info .product-qty {
+    display: flex;
+    align-items: baseline;
+  }
+}
