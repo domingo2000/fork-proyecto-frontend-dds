@@ -46,6 +46,14 @@ function PickUpForm() {
         ))}
       </div>
 
+      <h1 className='title'>Contact Information</h1>
+      <div className='contact-info'>
+        <input placeholder='First Name'/>
+        <input placeholder='Last Name'/>
+        <input placeholder='Phone Number'/>
+        <input placeholder='Email Address'/>
+      </div>
+
       <div className='submit-button'>
         <button className='submit' onClick={() => checkOut()}>Submit</button>
       </div>

@@ -23,7 +23,8 @@
   align-items: flex-start;
 }
 
-.delivery-form input {
+.delivery-form input,
+.pickup-form input {
   width: 100%;
   min-height: 50px;
   font-size: 17px;
