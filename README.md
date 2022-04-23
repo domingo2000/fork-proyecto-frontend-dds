@@ -20,5 +20,6 @@
 [domingo.edwards@uc.cl]:    mailto:domingo.edwards@uc.cl
 
 ### Contenido del repositorio
+Se encuentra una imagen de alta resolución del mockup en la carpeta `mockups`.
 
-Puedes agregar en este repositorio los archivos y carpetas que necesites. Se recomienda utilizar este README para incluir comentarios relevantes para la corrección. El uso de un .gitignore es altamente recomendado. Un buen lugar para entregar los mock-ups sería la carpeta `mockups/`.
+Adicionalmente, se deja el siguiente link para visualizar y navegar el mockup: [Link](https://www.figma.com/proto/SeOf4YZYyGwwcc8pux4zDi/EntregaPersonalDDS?node-id=0%3A1&viewport=241%2C48%2C0.25&scaling=scale-down&starting-point-node-id=2%3A150)
