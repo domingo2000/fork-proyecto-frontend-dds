@@ -1,17 +1,23 @@
 # Proyecto Semestral - Entrega 2
+### Parte del proyecto realizada: Carrito de compras
 
 ### Integrantes del equipo
 
 | Nombre | GitHub | Email |
 | :---------- | :--------- | :-------- |
-| :star: The Octocat | [@octocat] | [octocat@github.com]
-| The Octocat | [@octocat] | [octocat@github.com]
-| The Octocat | [@octocat] | [octocat@github.com]
+| ⭐️ José Miguel Quintana | [@josemquinta15] | [josemiguelquinta@uc.cl]
+| Vicente Zaror | [@vicentezaror] | [vicentezaror@uc.cl]
+| Domigo Edwards | [@domingo2000] | [domingo.edwards@uc.cl]
 
-Coloca tu nombre en la primera fila, junto al emoji :star:
 
-[@octocat]:              https://github.com/octocat
-[octocat@github.com]:    mailto:octocat@github.com
+[@josemquinta15]:              https://github.com/josemquinta15
+[josemiguelquinta@uc.cl]:    mailto:josemiguelquinta@uc.cl
+
+[@vicentezaror]: https://github.com/vicentezaror
+[vicentezaror@uc.cl]:    mailto:vicentezaror@uc.cl
+
+[@domingo2000]:  https://github.com/domingo2000
+[domingo.edwards@uc.cl]:    mailto:domingo.edwards@uc.cl
 
 ### Contenido del repositorio
 
