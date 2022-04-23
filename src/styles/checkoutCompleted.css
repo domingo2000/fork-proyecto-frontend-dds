@@ -1,0 +1,134 @@
+
+.checkout-completed-main {
+  width: 60%;
+  margin-left: 20%;
+  min-height: 80vh;
+}
+
+.checkout-completed-main .title {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 40px;
+}
+
+.checkout-completed-main .receipt .receipt-title {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.checkout-completed-main .receipt .receipt-title h1 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.receipt .receipt-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.receipt .buyer-info,
+.receipt .order-info,
+.receipt .receipt-product,
+.receipt .receipt-total {
+  width: 100%;
+  background-color: #d3d3dc75;
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.receipt .buyer-info .item,
+.receipt .order-info .item {
+  width: 50%;
+  padding: 10px;
+}
+
+.receipt .buyer-info .item .key,
+.receipt .order-info .item .key {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.receipt .buyer-info .item .value,
+.receipt .order-info .item .value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.receipt .receipt-product {
+  margin: 0;
+  display: flex;
+  padding: 10px;
+}
+
+.receipt-product .receipt-product-img {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.receipt-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.receipt-product-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.receipt-product-info .receipt-product-title {
+  width: 50%;
+}
+
+.receipt-product-info .receipt-product-title  h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.receipt table.receipt-total {
+  width: 100%;
+  padding-left: 70%;
+}
+
+.receipt table.receipt-total tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.receipt table.receipt-total tbody tr {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.receipt table.receipt-total tbody td.value {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .checkout-completed-main {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .checkout-completed-main .title {
+    margin: 40px 0px;
+  }
+  .receipt table.receipt-total {
+    padding-left: 50%;
+  }
+}

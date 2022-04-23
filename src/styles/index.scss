@@ -1,0 +1,18 @@
+@import './app';
+@import './productCheckout.css';
+@import './Bag.css';
+@import './checkout.css';
+@import './shippingForm.css';
+@import './checkoutCompleted.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  letter-spacing: .004em;
+}
+
+body {
+  margin-bottom: 30px;
+}
