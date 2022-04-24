@@ -117,7 +117,8 @@
   }
 
   .delivery-form .general-info,
-  .delivery-form .contact-info {
+  .delivery-form .contact-info,
+  .pickup-form .contact-info {
     width: 90%;
     margin-left: 5%;
   }
@@ -130,5 +131,39 @@
   
   .pickup-locals {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .bag-checkout {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .bag-checkout-shipping-method .title{
+    margin: 40px 10px;
+  }
+
+  .shipping-method-selector {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .delivery-form .general-info,
+  .delivery-form .contact-info,
+  .pickup-form .contact-info {
+    width: 70%;
+  }
+
+  .delivery-form .submit-button,
+  .pickup-form .submit-button {
+    width: 70%;
+    margin-left: 0;
+  }
+  
+  .pickup-locals {
+    width: 70%;
+  }
+  .local-pickup-card {
+    margin-left: 0;
   }
 }
