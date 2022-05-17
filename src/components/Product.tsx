@@ -1,6 +1,6 @@
 import React from 'react'
-import { Category } from '../interfaces/category'
-import { Product as IProduct } from '../interfaces/product'
+import { ICategory } from '../interfaces/ICategory'
+import { IProduct } from '../interfaces/IProduct'
 import { Link } from 'react-router-dom';
 
 interface ProductProps {
@@ -15,7 +15,7 @@ function Product({ product }: ProductProps) {
         <li>Code: {product.code}</li>
         <li>Price: {product.price}</li>
         <li>Brand: {product.brand}</li>
-        <li>Categories: {product.categories.map((category: Category) => category.name).join(', ')}</li>
+        <li>Categories: {product.categories.map((category: ICategory) => category.name).join(', ')}</li>
         <Link to={`/products/${product.id}/checkout`}>Buy</Link>
       </ul>
     </div>

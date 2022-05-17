@@ -1,6 +1,6 @@
 import React from 'react'
-import { Product as IProduct } from '../../interfaces/product';
-import { LineItem as ILineItem } from '../../interfaces/lineItem';
+import { IProduct } from '../../interfaces/IProduct';
+import { ILineItem } from '../../interfaces/ILineItem';
 import { emptyCart } from '../../utils/emptyCart';
 
 const addToBag = (product: IProduct) => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import DeliveryForm from '../../components/Checkout/DeliveryForm';
 import PickUpForm from '../../components/Checkout/PickUpForm';
-import { Cart as ICart } from '../../interfaces/cart';
+import { ICart } from '../../interfaces/ICart';
 
 function BagCheckout() {
   const [shippingMethod, setShippingMethod] = useState('delivery');
