@@ -153,55 +153,7 @@
   ],
   "categories": [
     {
-      "id": 2,
-      "name": "Tablets",
-      "created_at": "2022-04-12T03:26:52.198Z",
-      "updated_at": "2022-04-12T03:26:52.198Z",
-      "products": [
-        {
-          "id": 2,
-          "name": "10.9-inch iPad Air Wi-Fi 64GB - Space Gray",
-          "code": "T001",
-          "brand": "Apple",
-          "description": "iPad Air lets you immerse yourself in whatever you're reading, watching, or creating. The 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps, and make payments securely with Apple Pay. And iPad Air comes in five gorgeous colors.",
-          "price": 599,
-          "created_at": "2022-04-12T03:26:52.252Z",
-          "updated_at": "2022-04-12T03:26:52.252Z",
-          "categories": [
-            {
-              "id": 1,
-              "name": "Tablets",
-              "created_at": "2022-04-12T03:26:52.198Z",
-              "updated_at": "2022-04-12T03:26:52.198Z"
-            }
-          ],
-          "images": [
-            {
-              "id": 7,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.252Z",
-              "updated_at": "2022-04-12T03:26:52.252Z"
-            },
-            {
-              "id": 8,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.252Z",
-              "updated_at": "2022-04-12T03:26:52.252Z"
-            },
-            {
-              "id": 9,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.252Z",
-              "updated_at": "2022-04-12T03:26:52.252Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
+      "id": 1,
       "name": "earphones",
       "created_at": "2022-05-18T01:43:00.809Z",
       "updated_at": "2022-05-18T01:43:00.809Z",
@@ -274,8 +226,56 @@
             }
           ]
         }
-      ],
-      "id": 7
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tablets",
+      "created_at": "2022-04-12T03:26:52.198Z",
+      "updated_at": "2022-04-12T03:26:52.198Z",
+      "products": [
+        {
+          "id": 2,
+          "name": "10.9-inch iPad Air Wi-Fi 64GB - Space Gray",
+          "code": "T001",
+          "brand": "Apple",
+          "description": "iPad Air lets you immerse yourself in whatever you're reading, watching, or creating. The 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps, and make payments securely with Apple Pay. And iPad Air comes in five gorgeous colors.",
+          "price": 599,
+          "created_at": "2022-04-12T03:26:52.252Z",
+          "updated_at": "2022-04-12T03:26:52.252Z",
+          "categories": [
+            {
+              "id": 1,
+              "name": "Tablets",
+              "created_at": "2022-04-12T03:26:52.198Z",
+              "updated_at": "2022-04-12T03:26:52.198Z"
+            }
+          ],
+          "images": [
+            {
+              "id": 7,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            },
+            {
+              "id": 8,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            },
+            {
+              "id": 9,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            }
+          ]
+        }
+      ]
     }
   ],
   "line_items": [
