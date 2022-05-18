@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { LineItem } from '../../interfaces/lineItem';
+import { ILineItem } from '../../interfaces/ILineItem';
 
-function BagProduct({item, changeProductAmount, deleteProduct}: {item: LineItem, changeProductAmount: (productId: number, amount: number) => void, deleteProduct: (id: number) => void}) {
+function BagProduct({item, changeProductAmount, deleteProduct}: {item: ILineItem, changeProductAmount: (productId: number, amount: number) => void, deleteProduct: (id: number) => void}) {
   const [productQty, setProductQty] = useState(item.amount)
 
   return (
