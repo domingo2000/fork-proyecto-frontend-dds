@@ -1,0 +1,16 @@
+/* filter-bar */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  align-items: center;
+  padding: 10px 0px;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+}
