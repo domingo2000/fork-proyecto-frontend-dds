@@ -17,6 +17,9 @@ function Navbar() {
         <li>
           <Link to="/bag">Bag</Link>
         </li>
+        <li>
+          <Link to="/categories">Categories</Link>
+        </li>
       </ul>
     </nav>
   )
