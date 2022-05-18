@@ -4,6 +4,7 @@ import { IMeta } from "./IMeta"
 
 interface Product {
   name: string
+  subtitle: string
   description: string
   code: string
   price: number
