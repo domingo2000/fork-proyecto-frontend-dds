@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image as IImage } from '../../interfaces/image';
+import { IImage } from '../../interfaces/IImage';
 
 function ImageSelector({setSelectedImageURL, images}: {
   setSelectedImageURL: React.Dispatch<React.SetStateAction<string>>

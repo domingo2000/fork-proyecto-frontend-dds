@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import BagProduct from '../../components/Bag/BagProduct'
 import { Link } from 'react-router-dom';
-import { Cart as ICart } from '../../interfaces/cart'; 
+import { ICart } from '../../interfaces/ICart'; 
 import { emptyCart } from '../../utils/emptyCart';
 
 function Bag() {

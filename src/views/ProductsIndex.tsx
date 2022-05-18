@@ -1,6 +1,5 @@
 import useFetchData from '../hooks/useFetchData'
-import { Product as IProduct } from '../interfaces/product'
-import { Category } from '../interfaces/category'
+import { IProduct } from '../interfaces/IProduct'
 import Product from '../components/Product'
 
 function CoffeeIndex() {

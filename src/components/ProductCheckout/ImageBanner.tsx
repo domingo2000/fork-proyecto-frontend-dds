@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageSelector from './ImageSelector';
 import { useRef, useState, useEffect } from 'react';
-import { Product as IProduct } from '../../interfaces/product';
+import { IProduct } from '../../interfaces/IProduct';
 
 
 function ImageBanner({product}: {product: IProduct}) {

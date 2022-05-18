@@ -1,7 +1,7 @@
 import ImageBanner from '../../components/ProductCheckout/ImageBanner';
 import ProductInfo from '../../components/ProductCheckout/ProductInfo';
 import useFetchData from '../../hooks/useFetchData';
-import { Product as IProduct } from '../../interfaces/product';
+import { IProduct } from '../../interfaces/IProduct';
 import { useParams } from 'react-router-dom';
 
 function ProductCheckout() {

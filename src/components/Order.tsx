@@ -1,8 +1,6 @@
 import React from 'react'
-import { Category } from '../interfaces/category'
-import { Product as IProduct } from '../interfaces/product'
-import { LineItem as ILineItem} from '../interfaces/lineItem'
-import { Order as IOrder } from '../interfaces/order'
+import { ILineItem} from '../interfaces/ILineItem'
+import { IOrder } from '../interfaces/IOrder'
 import LineItem from './LineItem'
 
 interface OrderProps {
