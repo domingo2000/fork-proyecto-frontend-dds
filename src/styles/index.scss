@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import './app';
 @import './productCheckout.css';
 @import './Bag.css';
@@ -14,6 +11,9 @@
 @import './product-index';
 @import './ui-search';
 @import './filter-bar';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 * {
@@ -22,8 +22,4 @@
   padding: 0;
   font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   letter-spacing: .004em;
-}
-
-body {
-  margin-bottom: 30px;
 }
