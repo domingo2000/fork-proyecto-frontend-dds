@@ -1,17 +1,19 @@
 import ImageBanner from '../../components/ProductCheckout/ImageBanner';
 import ProductInfo from '../../components/ProductCheckout/ProductInfo';
-import useFetchData from '../../hooks/useFetchData';
+import useFetchData from '../../services/useFetchData';
 import { IProduct } from '../../interfaces/IProduct';
 import { useParams } from 'react-router-dom';
 
 function ProductCheckout() {
   const { id } = useParams();
   const {
-    data,
-    loading
+    response,
+    loading,
   } = useFetchData(`/products/${id}`);
 
-  const product = data as unknown as IProduct;
+  if (!response) { return null; }
+
+  const product = response.data as unknown as IProduct;
 
   return (
     <div className="product-checkout-main">

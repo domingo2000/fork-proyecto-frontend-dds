@@ -1,23 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Order from '../components/Order'
-import useFetchData from '../hooks/useFetchData'
-import { LineItem as ILineItem} from '../interfaces/lineItem'
-import { Order as IOrder } from '../interfaces/order'
+import useFetchData from '../services/useFetchData'
+import { IOrder } from '../interfaces/IOrder'
 
 
 function OrdersIndex() {
   const {
-    data,
+    response,
     loading,
   } = useFetchData('/orders')
   return (
     <div>
       <h1>Orders</h1>
       {loading && <p>Loading...</p>}
-      {data && (
+      {response && (
         <ul>
-          {data.map((order: IOrder) => (
+          {response.data.map((order: IOrder) => (
             <Order
               key={order.id}
               order={order}
