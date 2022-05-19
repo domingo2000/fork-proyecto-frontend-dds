@@ -8,12 +8,9 @@ interface ProductRawProps {
 
 export const ProductRaw: React.FC<ProductRawProps> = ({ product, children }) => {
   return (
-    <div className="ui-search-result">
-      <div className="ui-search-result__image">
-        <span className="ui-search-result__brand">
-          {product.brand}
-        </span>
-        <img src={product.images[0].url} alt="" />
+    <div className="flex w-full h-44">
+      <div className="">
+        <img className='object-contain h-full w-40' src={product.images[0].url} alt="" />
       </div>
       {children}
     </div>
@@ -27,17 +24,18 @@ interface ProductProps {
 function ProductDescription({ product, children }: ProductProps) {
   return (
     <div className="ui-search-result__content">
-      <h2 className="ui-search-result__content__name">
-        {product.name}
-      </h2>
+      <div className="flex mb-3 items-center">
+        {/* <span className="mr-3 bg-slate-600 text-white px-2 py-1 rounded-md">
+          {product.brand}
+        </span> */}
+        <h2 className='text-xl font-medium'>{product.name}</h2>
+      </div>
       <span className="ui-search-result__content__price">
-        $
-        {' '}
-        {product.price}
+        <h2 className='text-lg'>{`$ ${product.price}`}</h2>
       </span>
       <div className="ui-search-result__content__categories">
         {product.categories.map((category: ICategory) => (
-          <span className="ui-search-result__content__categories__category" key={category.id}>
+          <span className="bg-blue-500 p-1 mx-1 rounded-md text-white" key={category.id}>
             {category.name}
           </span>
         ))}
