@@ -1,5 +1,5 @@
 import React, { FormEvent } from 'react';
-
+import { capitalize } from '../../../utils/helpers';
 export interface FilterItemProps {
   _key?: string,
   onCheckedChange?: (key: string, value: boolean) => void,
@@ -16,9 +16,9 @@ export const FilterItem: React.FC<FilterItemProps> = (
   };
 
   return (
-    <div className="filter-bar__item">
-      <input className="checkbox checkbox--medium" type="checkbox" onChange={(e) => handleChange(e)} />
-      <h2>{_key}</h2>
+    <div className="w-full flex p-2 justify-start items-center">
+      <input className="w-4 h-4" type="checkbox" onChange={(e) => handleChange(e)} />
+      <h2 className='px-2'>{capitalize(_key)}</h2>
       {children}
     </div>
   );

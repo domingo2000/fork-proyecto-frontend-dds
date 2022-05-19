@@ -8,6 +8,7 @@ import { FilterItem } from '../components/Filter/FilterItem/FilterItem';
 import UiSearch from '../components/UiSearch';
 import Product from '../components/Product';
 import { ICategory } from '../interfaces/ICategory';
+import { Link } from 'react-router-dom';
 
 function setsDifference(setA: Set<string>, setB: Set<string>) {
   const difference = new Set(setA);
@@ -58,8 +59,8 @@ function ProductsIndex() {
   };
 
   return (
-    <div className="product-index">
-      <h1 className="product-index__header">Products</h1>
+    <div className="product-index min-h-screen">
+      <h1 className="text-4xl font-bold py-6">Products</h1>
       { loading ? <div>Loading...</div> : null }
       {error && <p>Error :(</p>}
       <div className="product-index__layout">
@@ -73,7 +74,9 @@ function ProductsIndex() {
         <div className="product-index__layout__item-right">
           <UiSearch>
             {renderedProducts.map((product) => (
-              <Product key={product.id} product={product} />
+              <Link to={`/products/${product.id}`}>
+                <Product key={product.id} product={product} />
+              </Link>
             ))}
           </UiSearch>
         </div>

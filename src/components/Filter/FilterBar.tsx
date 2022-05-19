@@ -3,11 +3,10 @@ import { FilterItemProps } from './FilterItem/FilterItem';
 
 export interface FilterBarProps {
   onFiltersChange?: (filters: Set<string>) => void,
+  children?: React.ReactNode,
 }
 
-export const FilterBar: React.FC<FilterBarProps> = (
-  { children, onFiltersChange = async () => {} },
-) => {
+function FilterBar({ children, onFiltersChange = async () => {} }: FilterBarProps) {
   const [filters, setFilters] = useState<Set<string>>(new Set());
 
   const onCheckedChange = (key: string, checked: boolean) => {
@@ -22,8 +21,8 @@ export const FilterBar: React.FC<FilterBarProps> = (
   };
 
   return (
-    <div className="filter-bar">
-      <h2>Categories</h2>
+    <div className="flex flex-col items-center px-16 py-4 bg-gray-200 rounded-lg">
+      <h2 className='font-semibold text-center text-xl'>Filter by Category</h2>
       {React.Children.map(children, (child) => {
         if (child) {
           return React.cloneElement(child as React.ReactElement<FilterItemProps>, {
