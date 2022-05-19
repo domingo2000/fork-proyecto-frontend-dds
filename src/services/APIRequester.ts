@@ -2,7 +2,7 @@ import axios from 'axios';
 import { ICategory } from '../interfaces/ICategory';
 import { IProduct } from '../interfaces/IProduct';
 
-class API {
+class APIRequester {
   static axios = axios.create({
     baseURL: 'http://localhost:3001',
     timeout: 1000,
@@ -12,60 +12,44 @@ class API {
   });
 
   static get(url: string, params?: any) {
-    return API.axios.get(url, { params });
+    return APIRequester.axios.get(url, { params });
   }
 
   static post(url: string, data?: any) {
-    return API.axios.post(url, data);
+    return APIRequester.axios.post(url, data);
   }
 
   static put(url: string, data?: any) {
-    return API.axios.put(url, data);
+    return APIRequester.axios.put(url, data);
   }
 
   static delete(url: string, data?: any) {
-    return API.axios.delete(url, { data });
-  }
-
-  static getProducts() {
-    return API.axios.get('/products');
-  }
-
-  static getCategories() {
-    return API.axios.get('/categories');
-  }
-
-  static getProduct(id: number) {
-    return API.axios.get(`/products/${id}`);
-  }
-
-  static getCategory(id: number) {
-    return API.axios.get(`/categories/${id}`);
+    return APIRequester.axios.delete(url, { data });
   }
 
   static createProduct(product: IProduct) {
-    return API.axios.post('/products', product);
+    return APIRequester.axios.post('/products', product);
   }
 
   static createCategory(category: ICategory) {
-    return API.axios.post('/categories', category);
+    return APIRequester.axios.post('/categories', category);
   }
 
   static editProduct(id: number, product : IProduct) {
-    return API.axios.put(`/categories/${id}`, product);
+    return APIRequester.axios.put(`/categories/${id}`, product);
   }
 
   static editCategory(id: number, category : ICategory) {
-    return API.axios.put(`/categories/${id}`, category);
+    return APIRequester.axios.put(`/categories/${id}`, category);
   }
 
   static deleteProduct(id: number) {
-    return API.axios.delete(`/products/${id}`);
+    return APIRequester.axios.delete(`/products/${id}`);
   }
 
   static deleteCategory(id: number) {
-    return API.axios.delete(`/categories/${id}`);
+    return APIRequester.axios.delete(`/categories/${id}`);
   }
 }
 
-export default API;
+export default APIRequester;
