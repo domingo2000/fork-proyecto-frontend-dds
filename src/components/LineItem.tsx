@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineItem as ILineItem } from '../interfaces/lineItem'
+import { ILineItem } from '../interfaces/ILineItem'
 
 interface LineItemProps {
   lineItem: ILineItem
@@ -10,7 +10,7 @@ function LineItem({ lineItem }: LineItemProps) {
     <div>
       <div>{lineItem.product.name}</div>
       <div>Amount: {lineItem.amount}</div>
-      <div>Disscount: {lineItem.disscount}</div>
+      <div>Disscount: {lineItem.discount}</div>
     </div>
   )
 }

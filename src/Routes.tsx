@@ -9,6 +9,7 @@ import ProductCheckout from './views/checkout/ProductCheckout';
 import Bag from './views/checkout/Bag';
 import BagCheckout from './views/checkout/BagCheckout';
 import CheckoutCompleted from './views/checkout/CheckoutCompleted';
+import CategoriesView from './views/CategoriesView';
 
 export default function Router() {
   return (
@@ -16,7 +17,8 @@ export default function Router() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="products" element={<Outlet></Outlet>}>
+        <Route path="categories" element={<CategoriesView />}> </Route>
+        <Route path="products" element={<Outlet/>}>
           <Route path=":id" element={<div>
             Hola
             </div>} />

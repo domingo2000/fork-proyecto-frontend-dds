@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #000;
+  transition: all 0.2s ease-in-out;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--red {
+    background: #f00;
+    border-color: #f00;
+  }
+
+  &--green {
+    background: #0f0;
+    border-color: #0f0; 
+  }
+}
