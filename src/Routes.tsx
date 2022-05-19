@@ -11,6 +11,7 @@ import BagCheckout from './views/checkout/BagCheckout';
 import CheckoutCompleted from './views/checkout/CheckoutCompleted';
 import CategoriesView from './views/CategoriesView';
 import Footer from './components/Footer';
+import SignIn from './views/SignIn';
 
 export default function Router() {
   return (
@@ -31,6 +32,7 @@ export default function Router() {
         <Route path="/bag" element={<Bag />} />
         <Route path="/checkout" element={<BagCheckout />} />
         <Route path="/checkout-completed" element={<CheckoutCompleted />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

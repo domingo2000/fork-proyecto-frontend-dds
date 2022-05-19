@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-home-gray mt-4 flex px-96 py-6'>
+    <div className='bg-home-gray mt-2 flex px-96 py-6'>
       <ul className='flex flex-col mx-20'>
         <p className='text-xl font-medium my-2'>Shop</p>
         <li className='leading-7'>Products</li>
