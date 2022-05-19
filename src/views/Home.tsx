@@ -39,7 +39,7 @@ function Home() {
   }, [response]);
 
   return (
-    <div className='minh-screen'>
+    <div className='min-h-screen'>
       { products.map(product => <HomeProduct key={product.id} product={product} />) }
 
       <div className="grid grid-cols-2 gap-2">
