@@ -10,6 +10,7 @@ import Bag from './views/checkout/Bag';
 import BagCheckout from './views/checkout/BagCheckout';
 import CheckoutCompleted from './views/checkout/CheckoutCompleted';
 import CategoriesView from './views/CategoriesView';
+import Footer from './components/Footer';
 
 export default function Router() {
   return (
@@ -31,6 +32,7 @@ export default function Router() {
         <Route path="/checkout" element={<BagCheckout />} />
         <Route path="/checkout-completed" element={<CheckoutCompleted />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
