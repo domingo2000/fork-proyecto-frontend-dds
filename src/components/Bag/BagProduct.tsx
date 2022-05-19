@@ -1,7 +1,13 @@
 import React, {useState} from 'react';
 import {ILineItem} from '../../interfaces/ILineItem';
 
-function BagProduct({item, changeProductAmount, deleteProduct}: {item: ILineItem, changeProductAmount: (productId: number, amount: number) => void, deleteProduct: (id: number) => void}) {
+interface IProps {
+  item: ILineItem
+  changeProductAmount: (productId: number, amount: number) => void
+  deleteProduct: (id: number) => void
+}
+
+function BagProduct({item, changeProductAmount, deleteProduct}: IProps) {
   const [productQty, setProductQty] = useState(item.amount);
 
   return (

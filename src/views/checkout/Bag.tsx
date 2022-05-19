@@ -14,18 +14,18 @@ function Bag() {
 
   useEffect(() => {
     let total = 0;
-    cart.line_items.forEach((line_item) => {
-      total += line_item.product.price * line_item.amount;
+    cart.line_items.forEach((lineItem) => {
+      total += lineItem.product.price * lineItem.amount;
     });
     setTotal(total);
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
   const deleteProduct = (id: number) => {
-    const line_items = cart.line_items.filter((item) => item.product.id !== id);
+    const lineItems = cart.line_items.filter((item) => item.product.id !== id);
     setCart({
       ...cart,
-      line_items,
+      lineItems,
     });
   };
 
@@ -48,7 +48,8 @@ function Bag() {
         <h1>Review your bag.</h1>
       </div>
       {cart.line_items.map((item) => (
-        <BagProduct key={item.product.id} item={item} changeProductAmount={changeProductAmount} deleteProduct={deleteProduct}/>
+        <BagProduct key={item.product.id} item={item} changeProductAmount={changeProductAmount}
+          deleteProduct={deleteProduct}/>
       ))}
       <div className="bag-total">
         <table>

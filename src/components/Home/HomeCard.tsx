@@ -18,7 +18,8 @@ function HomeCard({card} : IProps) {
       <div className='text-center text-4xl font-bold p-6'>{card.title}</div>
       <div className='text-center text-xl'>{card.subtitle}</div>
 
-      <Link to={card.link.path} className='text-center text-lg text-blue-600 py-2 px-4 flex items-center hover:underline tracking-wide'>
+      <Link to={card.link.path}
+        className='text-center text-lg text-blue-600 py-2 px-4 flex items-center hover:underline tracking-wide'>
         {card.link.name} <FontAwesomeIcon className="p-1" icon={faAngleRight}/>
       </Link>
     </div>

@@ -12,7 +12,7 @@ function Order({order}: OrderProps) {
     <div>
       <h2>Order #{order.id}</h2>
       {order.line_items.map((lineItem: ILineItem) => (
-        <div>
+        <div key={lineItem.id} >
           <hr />
           <LineItem key={lineItem.id} lineItem={lineItem} />
         </div>

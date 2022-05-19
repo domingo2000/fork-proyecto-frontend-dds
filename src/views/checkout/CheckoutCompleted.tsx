@@ -7,14 +7,14 @@ const initialProducts = [
     title: 'Airpods (3rd generation)',
     price: 179.00,
     qty: 1,
-    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000',
+    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000', // eslint-disable-line
   },
   {
     id: 1,
     title: '10.9-inch iPad Air Wi-Fi 64GB - Space Gray',
     price: 599.00,
     qty: 1,
-    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664',
+    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664', // eslint-disable-line
   },
   {
     id: 2,

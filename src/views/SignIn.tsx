@@ -22,7 +22,8 @@ function SignIn() {
             'border-b-0 rounded-t-lg' :
             'rounded-lg'}
             `} type='text' placeholder='Email' value={email} onChange={(event) => setEmail(event.target.value)} />
-            <FontAwesomeIcon className={emailSubmitted ? 'hidden' : 'absolute w-6 h-6 right-4 cursor-pointer'} icon={faCircleArrowRight} onClick={() => setEmailSubmitted(true)}/>
+            <FontAwesomeIcon className={emailSubmitted ? 'hidden' : 'absolute w-6 h-6 right-4 cursor-pointer'}
+              icon={faCircleArrowRight} onClick={() => setEmailSubmitted(true)}/>
           </div>
 
           <div className={emailSubmitted ? 'w-full flex relative items-center' : 'hidden'}>

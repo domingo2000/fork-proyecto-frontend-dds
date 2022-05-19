@@ -8,7 +8,8 @@ interface CategoryAddInputProps {
   placeholder?: string;
 }
 
-export default function CategoryAddInput({placeholder = 'New Category', onCategoryAdd = () => {}}: CategoryAddInputProps) {
+export default function CategoryAddInput({placeholder = 'New Category', onCategoryAdd = () => {}}
+  : CategoryAddInputProps) {
   const [categoryName, setCategoryName] = useState<string>('');
 
   const onClick = async () => {

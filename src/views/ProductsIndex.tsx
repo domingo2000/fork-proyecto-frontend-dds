@@ -67,14 +67,14 @@ function ProductsIndex() {
         <div className="product-index__layout__item-left">
           <FilterBar onFiltersChange={handleFilterChange}>
             {categories.map((category) => (
-              <FilterItem _key={category.name} />
+              <FilterItem key={category.name} />
             ))}
           </FilterBar>
         </div>
         <div className="product-index__layout__item-right">
           <UiSearch>
             {renderedProducts.map((product) => (
-              <Link to={`/products/${product.id}`}>
+              <Link key={product.id} to={`/products/${product.id}`}>
                 <Product key={product.id} product={product} />
               </Link>
             ))}

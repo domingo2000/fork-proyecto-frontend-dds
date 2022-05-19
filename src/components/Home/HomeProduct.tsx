@@ -15,10 +15,12 @@ function HomeProduct({product}: IProps) {
       <div className='text-center text-2xl tracking-wider font-medium p-2'>{product.subtitle}</div>
 
       <div className='flex justify-center'>
-        <Link to={`/products/${product.id}`} className='text-center text-xl text-blue-600 py-2 px-4 flex items-center hover:underline tracking-wide'>
+        <Link to={`/products/${product.id}`}
+          className='text-center text-xl text-blue-600 py-2 px-4 flex items-center hover:underline tracking-wide'>
           Learn More <FontAwesomeIcon className="p-1" icon={faAngleRight}/>
         </Link>
-        <Link to={`/products/${product.id}/checkout`} className='text-center text-xl text-blue-600 py-2 px-4 flex items-center hover:underline tracking-wide'>
+        <Link to={`/products/${product.id}/checkout`}
+          className='text-center text-xl text-blue-600 py-2 px-4 flex items-center hover:underline tracking-wide'>
           Buy <FontAwesomeIcon className="p-1" icon={faAngleRight}/>
         </Link>
       </div>

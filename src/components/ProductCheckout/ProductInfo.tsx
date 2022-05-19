@@ -6,7 +6,7 @@ import {emptyCart} from '../../utils/emptyCart';
 const addToBag = (product: IProduct) => {
   const cart = JSON.parse(localStorage.getItem('cart') as string);
   let wasInCart = false;
-  const line_items = cart.line_items.map((item: ILineItem) => {
+  const lineItems = cart.line_items.map((item: ILineItem) => {
     if (item.product.id === product.id) {
       item.amount += 1;
       wasInCart = true;
@@ -14,12 +14,12 @@ const addToBag = (product: IProduct) => {
     return item;
   });
   if (!wasInCart) {
-    line_items.push({
+    lineItems.push({
       product,
       amount: 1,
     });
   }
-  cart.line_items = line_items;
+  cart.line_items = lineItems;
   localStorage.setItem('cart', JSON.stringify(cart));
   window.location.href = '/bag';
 };

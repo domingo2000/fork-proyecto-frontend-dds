@@ -1,3 +1,4 @@
+import React from 'react';
 import ImageBanner from '../../components/ProductCheckout/ImageBanner';
 import ProductInfo from '../../components/ProductCheckout/ProductInfo';
 import useFetchData from '../../services/useFetchData';

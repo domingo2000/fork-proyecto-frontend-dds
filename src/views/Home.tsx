@@ -29,7 +29,7 @@ const cards: IHomeCardInfo[] = [
 ];
 
 function Home() {
-  const {response, loading, error} = useFetchData('/products');
+  const {response} = useFetchData('/products');
   const [products, setProducts] = useState<IProduct[]>([]);
 
   useEffect(() => {
