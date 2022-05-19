@@ -1,5 +1,5 @@
-import React from 'react'
-import ReceiptProduct from '../../components/Checkout/ReceiptProduct'
+import React from 'react';
+import ReceiptProduct from '../../components/Checkout/ReceiptProduct';
 
 const initialProducts = [
   {
@@ -7,7 +7,7 @@ const initialProducts = [
     title: 'Airpods (3rd generation)',
     price: 179.00,
     qty: 1,
-    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000', 
+    img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000',
   },
   {
     id: 1,
@@ -22,9 +22,9 @@ const initialProducts = [
     price: 999.00,
     qty: 1,
     img: 'https://www.apple.com/v/iphone/home/bf/images/overview/compare/compare_iphone_13_pro__bpn3x8hs692a_large.jpg',
-  }
+  },
 
-]
+];
 
 function CheckoutCompleted() {
   const subtotal = initialProducts.reduce((prev, curr) => prev + curr.price, 0);
@@ -61,7 +61,7 @@ function CheckoutCompleted() {
 
         </div>
         <div className='receipt-products'>
-          {initialProducts.map(product => (
+          {initialProducts.map((product) => (
             <ReceiptProduct product={product} key={product.id} />
           ))}
 
@@ -97,9 +97,9 @@ function CheckoutCompleted() {
         </table>
       </div>
 
-      
+
     </div>
-  )
+  );
 }
 
-export default CheckoutCompleted
+export default CheckoutCompleted;

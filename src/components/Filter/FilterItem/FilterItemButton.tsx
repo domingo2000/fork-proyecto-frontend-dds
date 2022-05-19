@@ -1,13 +1,13 @@
 import React from 'react';
-import Button, { ButtonProps } from '../../Buttons/Button';
-import { FilterItem, FilterItemProps } from './FilterItem';
+import Button, {ButtonProps} from '../../Buttons/Button';
+import {FilterItem, FilterItemProps} from './FilterItem';
 
 export interface FilterItemButtonProps extends FilterItemProps, ButtonProps {}
 
 export const FilterItemButton: React.FC<FilterItemButtonProps> = (
-  {
-    children, _key, onCheckedChange = () => {}, onClick = async () => {},
-  },
+    {
+      children, _key, onCheckedChange = () => {}, onClick = async () => {},
+    },
 ) => {
   return (
     <div>

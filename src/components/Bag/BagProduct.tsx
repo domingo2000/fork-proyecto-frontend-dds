@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { ILineItem } from '../../interfaces/ILineItem';
+import React, {useState} from 'react';
+import {ILineItem} from '../../interfaces/ILineItem';
 
 function BagProduct({item, changeProductAmount, deleteProduct}: {item: ILineItem, changeProductAmount: (productId: number, amount: number) => void, deleteProduct: (id: number) => void}) {
-  const [productQty, setProductQty] = useState(item.amount)
+  const [productQty, setProductQty] = useState(item.amount);
 
   return (
     <div className='bag-product'>
@@ -18,16 +18,18 @@ function BagProduct({item, changeProductAmount, deleteProduct}: {item: ILineItem
         </div>
         <div className="product-qty">
           <button onClick={() => {
-              if (productQty - 1 < 1) { return }
-              setProductQty(productQty - 1);
-              changeProductAmount(item.product.id, -1);
+            if (productQty - 1 < 1) {
+              return;
             }
+            setProductQty(productQty - 1);
+            changeProductAmount(item.product.id, -1);
+          }
           }>-</button>
           <h1>{productQty}</h1>
           <button onClick={() => {
-              setProductQty(productQty + 1);
-              changeProductAmount(item.product.id, +1);
-            }
+            setProductQty(productQty + 1);
+            changeProductAmount(item.product.id, +1);
+          }
           }>+</button>
         </div>
         <div className='end'>
@@ -36,7 +38,7 @@ function BagProduct({item, changeProductAmount, deleteProduct}: {item: ILineItem
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default BagProduct
+export default BagProduct;

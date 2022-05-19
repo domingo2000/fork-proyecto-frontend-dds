@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { IProduct } from '../interfaces/IProduct';
+import React, {useEffect, useState} from 'react';
+import {IProduct} from '../interfaces/IProduct';
 import useFetchData from '../services/useFetchData';
 import HomeProduct from '../components/Home/HomeProduct';
 import HomeCard from '../components/Home/HomeCard';
-import { IHomeCardInfo } from '../interfaces/IHomeCardInfo'; 
+import {IHomeCardInfo} from '../interfaces/IHomeCardInfo';
 
 const cards: IHomeCardInfo[] = [
   {
@@ -13,8 +13,8 @@ const cards: IHomeCardInfo[] = [
     image: 'studio-display',
     link: {
       path: '/products',
-      name: 'See All'
-    }
+      name: 'See All',
+    },
   },
   {
     id: 2,
@@ -23,13 +23,13 @@ const cards: IHomeCardInfo[] = [
     image: 'all-products',
     link: {
       path: '/products',
-      name: 'See All'
-    }
+      name: 'See All',
+    },
   },
-]
+];
 
 function Home() {
-  const { response, loading, error } = useFetchData('/products');
+  const {response, loading, error} = useFetchData('/products');
   const [products, setProducts] = useState<IProduct[]>([]);
 
   useEffect(() => {
@@ -40,10 +40,10 @@ function Home() {
 
   return (
     <div className='min-h-screen'>
-      { products.map(product => <HomeProduct key={product.id} product={product} />) }
+      { products.map((product) => <HomeProduct key={product.id} product={product} />) }
 
       <div className="grid grid-cols-2 gap-2">
-        { cards.map(card => <HomeCard key={card.id} card={card} />) }
+        { cards.map((card) => <HomeCard key={card.id} card={card} />) }
       </div>
     </div>
   );

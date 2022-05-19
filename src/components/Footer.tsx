@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
   return (
@@ -18,7 +18,7 @@ function Footer() {
         <li className='leading-7'>My Cart</li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

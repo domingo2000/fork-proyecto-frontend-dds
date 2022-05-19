@@ -1,12 +1,12 @@
 import React from 'react';
-import { ICategory } from '../interfaces/ICategory';
-import { IProduct } from '../interfaces/IProduct';
+import {ICategory} from '../interfaces/ICategory';
+import {IProduct} from '../interfaces/IProduct';
 
 interface ProductRawProps {
   product: IProduct | IProduct;
 }
 
-export const ProductRaw: React.FC<ProductRawProps> = ({ product, children }) => {
+export const ProductRaw: React.FC<ProductRawProps> = ({product, children}) => {
   return (
     <div className="flex w-full h-44">
       <div className="">
@@ -21,7 +21,7 @@ interface ProductProps {
   children?: React.ReactNode;
 }
 
-function ProductDescription({ product, children }: ProductProps) {
+function ProductDescription({product, children}: ProductProps) {
   return (
     <div className="ui-search-result__content">
       <div className="flex mb-3 items-center">
@@ -45,7 +45,7 @@ function ProductDescription({ product, children }: ProductProps) {
   );
 }
 
-function Product({ product, children }: ProductProps) {
+function Product({product, children}: ProductProps) {
   return (
     <ProductRaw product={product}>
       <ProductDescription product={product} />

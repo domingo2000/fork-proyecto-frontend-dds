@@ -1,5 +1,5 @@
-import React, { FormEvent } from 'react';
-import { capitalize } from '../../../utils/helpers';
+import React, {FormEvent} from 'react';
+import {capitalize} from '../../../utils/helpers';
 export interface FilterItemProps {
   _key?: string,
   onCheckedChange?: (key: string, value: boolean) => void,
@@ -8,10 +8,10 @@ export interface FilterItemProps {
 export type FilterItemCallback = (key: string, value: boolean) => void;
 
 export const FilterItem: React.FC<FilterItemProps> = (
-  { children, _key = '', onCheckedChange = () => {} },
+    {children, _key = '', onCheckedChange = () => {}},
 ) => {
   const handleChange = (e: FormEvent<HTMLInputElement>) => {
-    const { checked } = e.currentTarget;
+    const {checked} = e.currentTarget;
     onCheckedChange(_key, checked);
   };
 

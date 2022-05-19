@@ -1,7 +1,7 @@
-import React from 'react'
-import { IProduct } from '../../interfaces/IProduct';
-import { ILineItem } from '../../interfaces/ILineItem';
-import { emptyCart } from '../../utils/emptyCart';
+import React from 'react';
+import {IProduct} from '../../interfaces/IProduct';
+import {ILineItem} from '../../interfaces/ILineItem';
+import {emptyCart} from '../../utils/emptyCart';
 
 const addToBag = (product: IProduct) => {
   const cart = JSON.parse(localStorage.getItem('cart') as string);
@@ -22,7 +22,7 @@ const addToBag = (product: IProduct) => {
   cart.line_items = line_items;
   localStorage.setItem('cart', JSON.stringify(cart));
   window.location.href = '/bag';
-}
+};
 
 function ProductInfo({product}: {product: IProduct}) {
   if (localStorage.getItem('cart') === null) {
@@ -42,7 +42,7 @@ function ProductInfo({product}: {product: IProduct}) {
 
       <button onClick={() => addToBag(product)} className='submit-button'>Add to Bag</button>
     </div>
-  )
+  );
 }
 
-export default ProductInfo
+export default ProductInfo;

@@ -1,5 +1,5 @@
-import { IMeta } from './IMeta';
-import { IProduct } from './IProduct';
+import {IMeta} from './IMeta';
+import {IProduct} from './IProduct';
 
 export interface ICategoryBody {
   name: string

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 interface IProduct {
   id: number
@@ -26,7 +26,7 @@ function ReceiptProduct({product}: {product: IProduct}) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ReceiptProduct
+export default ReceiptProduct;

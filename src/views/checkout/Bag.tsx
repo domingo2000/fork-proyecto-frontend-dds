@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import BagProduct from '../../components/Bag/BagProduct'
-import { Link } from 'react-router-dom';
-import { ICart } from '../../interfaces/ICart'; 
-import { emptyCart } from '../../utils/emptyCart';
+import React, {useState, useEffect} from 'react';
+import BagProduct from '../../components/Bag/BagProduct';
+import {Link} from 'react-router-dom';
+import {ICart} from '../../interfaces/ICart';
+import {emptyCart} from '../../utils/emptyCart';
 
 function Bag() {
   if (localStorage.getItem('cart') === null) {
@@ -14,7 +14,7 @@ function Bag() {
 
   useEffect(() => {
     let total = 0;
-    cart.line_items.forEach(line_item => {
+    cart.line_items.forEach((line_item) => {
       total += line_item.product.price * line_item.amount;
     });
     setTotal(total);
@@ -22,15 +22,15 @@ function Bag() {
   }, [cart]);
 
   const deleteProduct = (id: number) => {
-    const line_items = cart.line_items.filter(item => item.product.id !== id);
+    const line_items = cart.line_items.filter((item) => item.product.id !== id);
     setCart({
       ...cart,
       line_items,
     });
-  }
+  };
 
   const changeProductAmount = (productId: number, amount: number) => {
-    const newProducts = cart.line_items.map(item => {
+    const newProducts = cart.line_items.map((item) => {
       if (item.product.id === productId) {
         item.amount += amount;
       }
@@ -40,7 +40,7 @@ function Bag() {
       ...cart,
       line_items: newProducts,
     });
-  }
+  };
 
   return (
     <div className='bag-main'>
@@ -72,7 +72,7 @@ function Bag() {
 
       <Link to='/checkout' className='checkout-button'>Check Out</Link>
     </div>
-  )
+  );
 }
 
-export default Bag
+export default Bag;

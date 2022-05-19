@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter, Outlet, Route, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ProductIndex from './views/ProductsIndex';
 import Home from './views/Home';
@@ -23,7 +23,7 @@ export default function Router() {
         <Route path="products" element={<Outlet/>}>
           <Route path=":id" element={<div>
             Hola
-            </div>} />
+          </div>} />
           <Route path=":id/checkout" element={<ProductCheckout />}/>
           <Route path="new" element={<TricksNew />} />
           <Route index element={<ProductIndex />} />

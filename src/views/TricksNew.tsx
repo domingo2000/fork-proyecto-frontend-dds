@@ -1,5 +1,5 @@
-import axios from 'axios'
-import React, { useState } from 'react'
+import axios from 'axios';
+import React, {useState} from 'react';
 import config from '../config/config';
 
 interface Trick {
@@ -9,29 +9,29 @@ interface Trick {
 }
 
 function TricksNew() {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+  const [name, setName] = useState('');
+  const [description, setDescription] = useState('');
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     const url = `${config.API_URL}/api/tricks`;
     const trick: Trick = {
       name,
-      description
+      description,
     };
-    axios.post(url, trick).then(response => {
+    axios.post(url, trick).then((response) => {
       console.log(response);
-    }).catch(error => {
+    }).catch((error) => {
       console.log(error);
     });
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Enter your name:
           <input
-            type="text" 
+            type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -48,8 +48,8 @@ function TricksNew() {
       </div>
       <input type="submit" />
     </form>
-  )
+  );
 }
 
 
-export default TricksNew
+export default TricksNew;

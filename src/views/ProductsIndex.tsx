@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-import { IProduct } from '../interfaces/IProduct';
+import {IProduct} from '../interfaces/IProduct';
 
 import FilterBar from '../components/Filter/FilterBar';
-import { FilterItem } from '../components/Filter/FilterItem/FilterItem';
+import {FilterItem} from '../components/Filter/FilterItem/FilterItem';
 import UiSearch from '../components/UiSearch';
 import Product from '../components/Product';
-import { ICategory } from '../interfaces/ICategory';
-import { Link } from 'react-router-dom';
+import {ICategory} from '../interfaces/ICategory';
+import {Link} from 'react-router-dom';
 
 function setsDifference(setA: Set<string>, setB: Set<string>) {
   const difference = new Set(setA);

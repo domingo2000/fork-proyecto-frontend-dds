@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { FilterItemProps } from './FilterItem/FilterItem';
+import React, {useState} from 'react';
+import {FilterItemProps} from './FilterItem/FilterItem';
 
 export interface FilterBarProps {
   onFiltersChange?: (filters: Set<string>) => void,
   children?: React.ReactNode,
 }
 
-function FilterBar({ children, onFiltersChange = async () => {} }: FilterBarProps) {
+function FilterBar({children, onFiltersChange = async () => {}}: FilterBarProps) {
   const [filters, setFilters] = useState<Set<string>>(new Set());
 
   const onCheckedChange = (key: string, checked: boolean) => {
