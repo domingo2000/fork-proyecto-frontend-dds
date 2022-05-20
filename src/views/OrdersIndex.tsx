@@ -1,14 +1,14 @@
-import React from 'react'
-import Order from '../components/Order'
-import useFetchData from '../services/useFetchData'
-import { IOrder } from '../interfaces/IOrder'
+import React from 'react';
+import Order from '../components/Order';
+import useFetchData from '../services/useFetchData';
+import {IOrder} from '../interfaces/IOrder';
 
 
 function OrdersIndex() {
   const {
     response,
     loading,
-  } = useFetchData('/orders')
+  } = useFetchData('/orders');
   return (
     <div>
       <h1>Orders</h1>
@@ -24,7 +24,7 @@ function OrdersIndex() {
         </ul>
       )}
     </div>
-  )
+  );
 }
 
-export default OrdersIndex
+export default OrdersIndex;

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import API from '../../services/APIRequester';
-import { ICategory } from '../../interfaces/ICategory';
+import {ICategory} from '../../interfaces/ICategory';
 import Button from '../Buttons/Button';
 
 interface CategoryAddInputProps {
@@ -8,7 +8,8 @@ interface CategoryAddInputProps {
   placeholder?: string;
 }
 
-export default function CategoryAddInput({ placeholder = 'New Category', onCategoryAdd = () => {} }: CategoryAddInputProps) {
+export default function CategoryAddInput({placeholder = 'New Category', onCategoryAdd = () => {}}
+  : CategoryAddInputProps) {
   const [categoryName, setCategoryName] = useState<string>('');
 
   const onClick = async () => {

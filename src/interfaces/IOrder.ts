@@ -1,5 +1,5 @@
-import { ILineItem } from './ILineItem';
-import { IMeta } from './IMeta';
+import {ILineItem} from './ILineItem';
+import {IMeta} from './IMeta';
 
 export interface IOrderBody {
   line_items: ILineItem[]

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import BagProduct from '../../components/Bag/BagProduct'
-import { Link } from 'react-router-dom';
-import { ICart } from '../../interfaces/ICart'; 
-import { emptyCart } from '../../utils/emptyCart';
+import React, {useState, useEffect} from 'react';
+import BagProduct from '../../components/Bag/BagProduct';
+import {Link} from 'react-router-dom';
+import {ICart} from '../../interfaces/ICart';
+import {emptyCart} from '../../utils/emptyCart';
 
 function Bag() {
   if (localStorage.getItem('cart') === null) {
@@ -14,23 +14,23 @@ function Bag() {
 
   useEffect(() => {
     let total = 0;
-    cart.line_items.forEach(line_item => {
-      total += line_item.product.price * line_item.amount;
+    cart.line_items.forEach((lineItem) => {
+      total += lineItem.product.price * lineItem.amount;
     });
     setTotal(total);
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
   const deleteProduct = (id: number) => {
-    const line_items = cart.line_items.filter(item => item.product.id !== id);
+    const lineItems = cart.line_items.filter((item) => item.product.id !== id);
     setCart({
       ...cart,
-      line_items,
+      lineItems,
     });
-  }
+  };
 
   const changeProductAmount = (productId: number, amount: number) => {
-    const newProducts = cart.line_items.map(item => {
+    const newProducts = cart.line_items.map((item) => {
       if (item.product.id === productId) {
         item.amount += amount;
       }
@@ -40,7 +40,7 @@ function Bag() {
       ...cart,
       line_items: newProducts,
     });
-  }
+  };
 
   return (
     <div className='bag-main'>
@@ -48,7 +48,8 @@ function Bag() {
         <h1>Review your bag.</h1>
       </div>
       {cart.line_items.map((item) => (
-        <BagProduct key={item.product.id} item={item} changeProductAmount={changeProductAmount} deleteProduct={deleteProduct}/>
+        <BagProduct key={item.product.id} item={item} changeProductAmount={changeProductAmount}
+          deleteProduct={deleteProduct}/>
       ))}
       <div className="bag-total">
         <table>
@@ -72,7 +73,7 @@ function Bag() {
 
       <Link to='/checkout' className='checkout-button'>Check Out</Link>
     </div>
-  )
+  );
 }
 
-export default Bag
+export default Bag;

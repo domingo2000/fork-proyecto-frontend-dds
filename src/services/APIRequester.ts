@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { ICategory } from '../interfaces/ICategory';
-import { IProduct } from '../interfaces/IProduct';
+import {ICategory} from '../interfaces/ICategory';
+import {IProduct} from '../interfaces/IProduct';
 
 class APIRequester {
   static axios = axios.create({
@@ -12,7 +12,7 @@ class APIRequester {
   });
 
   static get(url: string, params?: any) {
-    return APIRequester.axios.get(url, { params });
+    return APIRequester.axios.get(url, {params});
   }
 
   static post(url: string, data?: any) {
@@ -24,7 +24,7 @@ class APIRequester {
   }
 
   static delete(url: string, data?: any) {
-    return APIRequester.axios.delete(url, { data });
+    return APIRequester.axios.delete(url, {data});
   }
 
   static createProduct(product: IProduct) {

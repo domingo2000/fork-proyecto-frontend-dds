@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 interface ILocal {
   id: number
@@ -13,13 +13,13 @@ interface IProps {
 }
 
 function LocalPickUpCard({local, setSelectedLocalId, localsRef} : IProps) {
-
   return (
-    <button className='local-pickup-card' ref={el => localsRef.current[local.id] = el} onClick={() => setSelectedLocalId(local.id)}>
+    <button className='local-pickup-card' ref={(el) => localsRef.current[local.id] = el}
+      onClick={() => setSelectedLocalId(local.id)}>
       <h1 className='local-name'>{local.name}</h1>
       <p className='local-address'>{local.address}</p>
     </button>
-  )
+  );
 }
 
-export default LocalPickUpCard
+export default LocalPickUpCard;

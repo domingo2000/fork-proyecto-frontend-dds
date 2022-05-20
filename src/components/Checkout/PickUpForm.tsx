@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from 'react'
-import LocalPickUpCard from './LocalPickUpCard'
-import { emptyCart } from '../../utils/emptyCart';
+import React, {useState, useRef, useEffect} from 'react';
+import LocalPickUpCard from './LocalPickUpCard';
+import {emptyCart} from '../../utils/emptyCart';
 
 const checkOut = () => {
   localStorage.setItem('cart', JSON.stringify(emptyCart));
   window.location.href = '/checkout-completed';
-}
+};
 
 const locals = [
   {
@@ -23,7 +23,7 @@ const locals = [
     name: 'La Reina',
     address: 'Calle de la Reina, 1, 28001 Madrid, Spain',
   },
-]
+];
 
 function PickUpForm() {
   const [selectedLocalId, setSelectedLocalId] = useState(0);
@@ -31,17 +31,17 @@ function PickUpForm() {
 
   useEffect(() => {
     if (localsRef.current[selectedLocalId]) {
-      localsRef.current.forEach(el => el.classList.remove('active'));
+      localsRef.current.forEach((el) => el.classList.remove('active'));
       localsRef.current[selectedLocalId].classList.add('active');
     }
   }, [selectedLocalId]);
-  
+
   return (
     <div className='pickup-form'>
       <h1 className='title'>Where would you like to pick up your order?</h1>
 
       <div className='pickup-locals'>
-        {locals.map(local => (
+        {locals.map((local) => (
           <LocalPickUpCard key={local.id} local={local} setSelectedLocalId={setSelectedLocalId} localsRef={localsRef}/>
         ))}
       </div>
@@ -58,7 +58,7 @@ function PickUpForm() {
         <button className='submit' onClick={() => checkOut()}>Submit</button>
       </div>
     </div>
-  )
+  );
 }
 
-export default PickUpForm
+export default PickUpForm;
