@@ -1,6 +1,6 @@
-import { ICategory } from "./ICategory"
-import { IImage } from "./IImage"
-import { IMeta } from "./IMeta"
+import {ICategory} from './ICategory';
+import {IImage} from './IImage';
+import {IMeta} from './IMeta';
 
 interface Product {
   name: string

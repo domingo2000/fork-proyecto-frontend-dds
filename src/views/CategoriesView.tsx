@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { ICategory } from '../interfaces/ICategory';
-import { CategoryWithProducts } from '../components/Category/Category';
-import { CategoryFilterBar } from '../components/Category/CategoryFilterBar';
+import React, {useEffect, useState} from 'react';
+import {ICategory} from '../interfaces/ICategory';
+import {CategoryWithProducts} from '../components/Category/Category';
+import {CategoryFilterBar} from '../components/Category/CategoryFilterBar';
 
 import LeftRightLayout from '../components/Layouts/LeftRightLayout';
 import useFetchData from '../services/useFetchData';
@@ -10,8 +10,8 @@ type Props = {
   children?: React.ReactNode;
 };
 
-function CategoriesView({ children = null } : Props) {
-  const { response, loading, error } = useFetchData('/categories');
+function CategoriesView({children = null} : Props) {
+  const {response, loading, error} = useFetchData('/categories');
   const [categories, setCategories] = useState<ICategory[]>([]);
   const [filteredCategories, setFilteredCategories] = useState<ICategory[]>(
     response ? response.data : [],
@@ -57,7 +57,7 @@ function CategoriesView({ children = null } : Props) {
                 onFiltersChange={handleFilterChange}
                 onCategoryDelete={handleCategoryDelete}
               />
-              )}
+            )}
             right={(
               <div className="ui-search">
                 {filteredCategories.map((category) => (
@@ -66,7 +66,7 @@ function CategoriesView({ children = null } : Props) {
                   </div>
                 ))}
               </div>
-              )}
+            )}
           />
 
         </div>

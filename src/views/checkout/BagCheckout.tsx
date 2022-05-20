@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, {useState, useEffect, useRef} from 'react';
 import DeliveryForm from '../../components/Checkout/DeliveryForm';
 import PickUpForm from '../../components/Checkout/PickUpForm';
-import { ICart } from '../../interfaces/ICart';
+import {ICart} from '../../interfaces/ICart';
 
 function BagCheckout() {
   const [shippingMethod, setShippingMethod] = useState('delivery');
@@ -43,7 +43,7 @@ function BagCheckout() {
       {shippingMethod === 'delivery' && <DeliveryForm />}
       {shippingMethod === 'pickup' && <PickUpForm />}
     </div>
-  )
+  );
 }
 
-export default BagCheckout
+export default BagCheckout;

@@ -1,5 +1,5 @@
-import { ILineItem } from './ILineItem';
-import { IMeta } from './IMeta';
+import {ILineItem} from './ILineItem';
+import {IMeta} from './IMeta';
 
 interface Cart {
   total: number

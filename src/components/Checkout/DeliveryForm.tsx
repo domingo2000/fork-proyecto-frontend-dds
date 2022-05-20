@@ -1,10 +1,10 @@
-import React from 'react'
-import { emptyCart } from '../../utils/emptyCart'
+import React from 'react';
+import {emptyCart} from '../../utils/emptyCart';
 
 const checkOut = () => {
   localStorage.setItem('cart', JSON.stringify(emptyCart));
   window.location.href = '/checkout-completed';
-}
+};
 
 function DeliveryForm() {
   return (
@@ -30,7 +30,7 @@ function DeliveryForm() {
         <button className='submit' onClick={() => checkOut()}>Submit</button>
       </div>
     </div>
-  )
+  );
 }
 
-export default DeliveryForm
+export default DeliveryForm;

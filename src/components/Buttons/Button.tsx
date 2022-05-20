@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
 export interface ButtonProps {
   children?: React.ReactNode
@@ -7,20 +7,20 @@ export interface ButtonProps {
 }
 
 // https://react-bootstrap.github.io/components/buttons/
-export const Button: React.FC<ButtonProps> = ({ onClick = async () => {}, children, className = '' }) => {
+export const Button: React.FC<ButtonProps> = ({onClick = async () => {}, children, className = ''}) => {
   const [error, setError] = useState(false);
   const [event, setEvent] = useState<React.MouseEvent<HTMLButtonElement> | null>(null);
 
   useEffect(() => {
     if (event) {
       onClick(event)
-        .catch(async () => {
-          setError(true);
-          setTimeout(() => setError(false), 1000);
-        })
-        .finally(() => {
-          setEvent(null);
-        });
+          .catch(async () => {
+            setError(true);
+            setTimeout(() => setError(false), 1000);
+          })
+          .finally(() => {
+            setEvent(null);
+          });
     }
   }, [event]);
 

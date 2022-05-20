@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import React, {useState} from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCircleArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 function SignIn() {
   const [email, setEmail] = useState('');
@@ -18,20 +18,21 @@ function SignIn() {
           <p className='text-2xl font-medium py-2 text-center'>Sign in to your account</p>
 
           <div className='w-full flex relative items-center'>
-            <input className={ `bg-transparent w-full border-2 h-12 p-3 border-gray-300 ${emailSubmitted ? 
-            'border-b-0 rounded-t-lg'
-            : 'rounded-lg'}
+            <input className={ `bg-transparent w-full border-2 h-12 p-3 border-gray-300 ${emailSubmitted ?
+            'border-b-0 rounded-t-lg' :
+            'rounded-lg'}
             `} type='text' placeholder='Email' value={email} onChange={(event) => setEmail(event.target.value)} />
-            <FontAwesomeIcon className={emailSubmitted ? 'hidden' : 'absolute w-6 h-6 right-4 cursor-pointer'} icon={faCircleArrowRight} onClick={() => setEmailSubmitted(true)}/>
+            <FontAwesomeIcon className={emailSubmitted ? 'hidden' : 'absolute w-6 h-6 right-4 cursor-pointer'}
+              icon={faCircleArrowRight} onClick={() => setEmailSubmitted(true)}/>
           </div>
 
           <div className={emailSubmitted ? 'w-full flex relative items-center' : 'hidden'}>
-            <input className={`${inputBaseClasses} rounded-b-lg`} type='password' placeholder='Password' 
+            <input className={`${inputBaseClasses} rounded-b-lg`} type='password' placeholder='Password'
               value={password} onChange={(event) => setPassword(event.target.value)} />
-              
+
             <FontAwesomeIcon className='absolute w-6 h-6 right-4 cursor-pointer' icon={faCircleArrowRight} />
           </div>
-          
+
           <div className='flex justify-center'>
             <div className='flex items-center justify-center mt-4 border-b-2 w-2/3'>
               <input className='bg-transparent border-2 border-gray-300 rounded-l-lg h-12 p-3' type='checkbox'></input>
@@ -42,7 +43,7 @@ function SignIn() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default SignIn
+export default SignIn;

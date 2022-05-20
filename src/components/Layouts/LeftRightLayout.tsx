@@ -6,7 +6,7 @@ interface LeftRightLayoutProps {
   right: React.ReactNode;
 }
 
-function LeftRightLayout({ left, right, header } : LeftRightLayoutProps) {
+function LeftRightLayout({left, right, header} : LeftRightLayoutProps) {
   return (
     <div className="product-index">
       { header && <h1 className="product-index__header">{header}</h1> }
