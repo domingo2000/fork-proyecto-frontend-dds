@@ -25,7 +25,7 @@ function Bag() {
     const lineItems = cart.line_items.filter((item) => item.product.id !== id);
     setCart({
       ...cart,
-      lineItems,
+      line_items: lineItems,
     });
   };
 
