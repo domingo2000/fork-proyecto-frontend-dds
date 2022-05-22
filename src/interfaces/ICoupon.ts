@@ -5,6 +5,7 @@ interface Coupon {
   category: ICategory
   code: string
   active: boolean
+  discount: number
   expiryDate: Date
 }
 
