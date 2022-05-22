@@ -14,13 +14,13 @@ export const Button: React.FC<ButtonProps> = ({onClick = async () => {}, childre
   useEffect(() => {
     if (event) {
       onClick(event)
-          .catch(async () => {
-            setError(true);
-            setTimeout(() => setError(false), 1000);
-          })
-          .finally(() => {
-            setEvent(null);
-          });
+        .catch(async () => {
+          setError(true);
+          setTimeout(() => setError(false), 1000);
+        })
+        .finally(() => {
+          setEvent(null);
+        });
     }
   }, [event]);
 

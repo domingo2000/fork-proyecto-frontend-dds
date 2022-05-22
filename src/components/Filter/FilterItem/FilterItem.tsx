@@ -8,7 +8,7 @@ export interface FilterItemProps {
 export type FilterItemCallback = (key: string, value: boolean) => void;
 
 export const FilterItem: React.FC<FilterItemProps> = (
-    {children, _key = '', onCheckedChange = () => {}},
+  {children, _key = '', onCheckedChange = () => {}},
 ) => {
   const handleChange = (e: FormEvent<HTMLInputElement>) => {
     const {checked} = e.currentTarget;
