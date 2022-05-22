@@ -3,6 +3,7 @@ import {IMeta} from './IMeta';
 
 export interface IOrderBody {
   line_items: ILineItem[]
+  total: number
 }
 
-export interface IOrder extends IOrderBody, IMeta {}
+export interface IOrder extends IOrderBody, IMeta {};
