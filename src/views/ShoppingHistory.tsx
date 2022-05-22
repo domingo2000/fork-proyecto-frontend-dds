@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import HistoryOrder from '../components/HistoryOrder';
+import HistoryOrder from '../components/History/HistoryOrder';
 import useFetchData from '../services/useFetchData';
 import {IOrder} from '../interfaces/IOrder';
 
