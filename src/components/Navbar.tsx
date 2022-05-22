@@ -21,7 +21,7 @@ function Navbar() {
           <Link to="/bag">Bag</Link>
         </li>
         <li className='mx-2 text-lg hover:ring-2 p-1 rounded-md ring-gray-300'>
-          <Link to="/orders">My Orders</Link>
+          <Link to="/history">My Orders</Link>
         </li>
         <li className='mx-2 text-lg hover:ring-2 p-1 rounded-md ring-gray-300'>
           <Link to="/signin"

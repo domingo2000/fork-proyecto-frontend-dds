@@ -3,7 +3,7 @@ import {BrowserRouter, Outlet, Route, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ProductIndex from './views/ProductsIndex';
 import Home from './views/Home';
-import OrderIndex from './views/OrdersIndex';
+import ShoppingHistory from './views/ShoppingHistory';
 import ProductCheckout from './views/checkout/ProductCheckout';
 import Bag from './views/checkout/Bag';
 import BagCheckout from './views/checkout/BagCheckout';
@@ -27,7 +27,7 @@ export default function Router() {
           <Route path=":id/checkout" element={<ProductCheckout />}/>
           <Route index element={<ProductIndex />} />
         </Route>
-        <Route path="/orders" element={<OrderIndex />} />
+        <Route path="/history" element={<ShoppingHistory />} />
         <Route path="/bag" element={<Bag />} />
         <Route path="/checkout" element={<BagCheckout />} />
         <Route path="/checkout-completed" element={<CheckoutCompleted />} />
