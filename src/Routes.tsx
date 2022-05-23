@@ -12,6 +12,7 @@ import CategoriesView from './views/CategoriesView';
 import Footer from './components/Footer';
 import SignIn from './views/SignIn';
 import Register from './views/Register';
+import Coupons from './views/Coupons';
 
 export default function Router() {
   return (
@@ -28,6 +29,7 @@ export default function Router() {
           <Route index element={<ProductIndex />} />
         </Route>
         <Route path="/history" element={<ShoppingHistory />} />
+        <Route path="/coupons" element={<Coupons />} />
         <Route path="/bag" element={<Bag />} />
         <Route path="/checkout" element={<BagCheckout />} />
         <Route path="/checkout-completed" element={<CheckoutCompleted />} />
