@@ -672,6 +672,58 @@
         }],
         "discounts": 400,
         "total": 1500
+      }],
+      "coupons": [{
+        "category": {
+          "id": 1,
+          "name": "earphones",
+          "created_at": "2022-05-18T01:43:00.809Z",
+          "updated_at": "2022-05-18T01:43:00.809Z"
+        },
+        "code": "SUPER-PROMO",
+        "redeemed": false,
+        "active": false,
+        "discount": 0.5,
+        "expiryDate": "2022-05-18T01:43:00.809Z"
+      },
+      {
+        "category": {
+          "id": 2,
+          "name": "phones",
+          "created_at": "2022-05-18T01:43:00.809Z",
+          "updated_at": "2022-05-18T01:43:00.809Z"
+        },
+        "code": "PHONES-20DSCT",
+        "redeemed": true,
+        "active": false,
+        "discount": 0.5,
+        "expiryDate": "2022-05-18T01:43:00.809Z"
+      },
+      {
+        "category": {
+          "id": 2,
+          "name": "tablets",
+          "created_at": "2022-05-18T01:43:00.809Z",
+          "updated_at": "2022-05-18T01:43:00.809Z"
+        },
+        "code": "TABLETS-40DSCT",
+        "redeemed": false,
+        "active": true,
+        "discount": 0.4,
+        "expiryDate": "2022-05-18T01:43:00.809Z"
+      },
+      {
+        "category": {
+          "id": 2,
+          "name": "tablets",
+          "created_at": "2022-05-18T01:43:00.809Z",
+          "updated_at": "2022-05-18T01:43:00.809Z"
+        },
+        "code": "TABLETS-80DSCT",
+        "redeemed": true,
+        "active": true,
+        "discount": 0.8,
+        "expiryDate": "2022-05-18T01:43:00.809Z"
       }]
     },
     {
