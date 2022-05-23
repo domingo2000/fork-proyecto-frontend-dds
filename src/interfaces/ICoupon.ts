@@ -5,8 +5,9 @@ interface Coupon {
   category: ICategory
   code: string
   active: boolean
+  redeemed: boolean
   discount: number
-  expiryDate: Date
+  expiryDate: string
 }
 
 export interface ICoupon extends Coupon, IMeta {}
