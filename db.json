@@ -79,16 +79,13 @@
       "price": 599,
       "created_at": "2022-04-12T03:26:52.252Z",
       "updated_at": "2022-04-12T03:26:52.252Z",
-      "categories": [
-        {
-          "id": 1,
-          "name": "Tablets",
-          "created_at": "2022-04-12T03:26:52.198Z",
-          "updated_at": "2022-04-12T03:26:52.198Z"
-        }
-      ],
-      "images": [
-        {
+      "categories": [{
+        "id": 1,
+        "name": "Tablets",
+        "created_at": "2022-04-12T03:26:52.198Z",
+        "updated_at": "2022-04-12T03:26:52.198Z"
+      }],
+      "images": [{
           "id": 7,
           "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
           "product_id": 1,
@@ -121,16 +118,13 @@
       "price": 999,
       "created_at": "2022-04-12T03:26:52.263Z",
       "updated_at": "2022-04-12T03:26:52.263Z",
-      "categories": [
-        {
-          "id": 2,
-          "name": "Celphones",
-          "created_at": "2022-04-12T03:26:52.223Z",
-          "updated_at": "2022-04-12T03:26:52.223Z"
-        }
-      ],
-      "images": [
-        {
+      "categories": [{
+        "id": 2,
+        "name": "Celphones",
+        "created_at": "2022-04-12T03:26:52.223Z",
+        "updated_at": "2022-04-12T03:26:52.223Z"
+      }],
+      "images": [{
           "id": 10,
           "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-compare-iphone-13-pro-202203?wid=572&hei=572&fmt=png-alpha&qlt=95&.v=1645042316939",
           "product_id": 1,
@@ -160,125 +154,116 @@
       "name": "earphones",
       "created_at": "2022-05-18T01:43:00.809Z",
       "updated_at": "2022-05-18T01:43:00.809Z",
-      "products": [
-        {
-          "id": 1,
-          "name": "Airpods (3rd generation)",
-          "code": "C001",
-          "brand": "Apple",
-          "description": "All-new design AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 percent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls. Spatial audio with dynamic head tracking Sound is placed all around you to create an immersive, three-dimensional listening experience for music, TV shows, and movies. Gyroscopes and accelerometers in AirPods work together to track your head movements — so it sounds like you're in the center of songs and scenes.",
-          "price": 179,
-          "created_at": "2022-04-12T03:26:52.242Z",
-          "updated_at": "2022-04-12T03:26:52.242Z",
-          "categories": [
-            {
-              "id": 1,
-              "name": "Earphones",
-              "created_at": "2022-04-12T03:26:52.198Z",
-              "updated_at": "2022-04-12T03:26:52.198Z"
-            },
-            {
-              "id": 2,
-              "name": "Music",
-              "created_at": "2022-04-12T03:26:52.223Z",
-              "updated_at": "2022-04-12T03:26:52.223Z"
-            }
-          ],
-          "images": [
-            {
-              "id": 1,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.242Z",
-              "updated_at": "2022-04-12T03:26:52.242Z"
-            },
-            {
-              "id": 2,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861333000",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.242Z",
-              "updated_at": "2022-04-12T03:26:52.242Z"
-            },
-            {
-              "id": 3,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861338000",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.242Z",
-              "updated_at": "2022-04-12T03:26:52.242Z"
-            },
-            {
-              "id": 4,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.242Z",
-              "updated_at": "2022-04-12T03:26:52.242Z"
-            },
-            {
-              "id": 5,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV4?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.242Z",
-              "updated_at": "2022-04-12T03:26:52.242Z"
-            },
-            {
-              "id": 6,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV5?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1633733312000",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.242Z",
-              "updated_at": "2022-04-12T03:26:52.242Z"
-            }
-          ]
-        }
-      ]
+      "products": [{
+        "id": 1,
+        "name": "Airpods (3rd generation)",
+        "code": "C001",
+        "brand": "Apple",
+        "description": "All-new design AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 percent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls. Spatial audio with dynamic head tracking Sound is placed all around you to create an immersive, three-dimensional listening experience for music, TV shows, and movies. Gyroscopes and accelerometers in AirPods work together to track your head movements — so it sounds like you're in the center of songs and scenes.",
+        "price": 179,
+        "created_at": "2022-04-12T03:26:52.242Z",
+        "updated_at": "2022-04-12T03:26:52.242Z",
+        "categories": [{
+            "id": 1,
+            "name": "Earphones",
+            "created_at": "2022-04-12T03:26:52.198Z",
+            "updated_at": "2022-04-12T03:26:52.198Z"
+          },
+          {
+            "id": 2,
+            "name": "Music",
+            "created_at": "2022-04-12T03:26:52.223Z",
+            "updated_at": "2022-04-12T03:26:52.223Z"
+          }
+        ],
+        "images": [{
+            "id": 1,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.242Z",
+            "updated_at": "2022-04-12T03:26:52.242Z"
+          },
+          {
+            "id": 2,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861333000",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.242Z",
+            "updated_at": "2022-04-12T03:26:52.242Z"
+          },
+          {
+            "id": 3,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861338000",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.242Z",
+            "updated_at": "2022-04-12T03:26:52.242Z"
+          },
+          {
+            "id": 4,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.242Z",
+            "updated_at": "2022-04-12T03:26:52.242Z"
+          },
+          {
+            "id": 5,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV4?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.242Z",
+            "updated_at": "2022-04-12T03:26:52.242Z"
+          },
+          {
+            "id": 6,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV5?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1633733312000",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.242Z",
+            "updated_at": "2022-04-12T03:26:52.242Z"
+          }
+        ]
+      }]
     },
     {
       "id": 2,
       "name": "Tablets",
       "created_at": "2022-04-12T03:26:52.198Z",
       "updated_at": "2022-04-12T03:26:52.198Z",
-      "products": [
-        {
-          "id": 2,
-          "name": "10.9-inch iPad Air Wi-Fi 64GB - Space Gray",
-          "code": "T001",
-          "brand": "Apple",
-          "description": "iPad Air lets you immerse yourself in whatever you're reading, watching, or creating. The 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps, and make payments securely with Apple Pay. And iPad Air comes in five gorgeous colors.",
-          "price": 599,
-          "created_at": "2022-04-12T03:26:52.252Z",
-          "updated_at": "2022-04-12T03:26:52.252Z",
-          "categories": [
-            {
-              "id": 1,
-              "name": "Tablets",
-              "created_at": "2022-04-12T03:26:52.198Z",
-              "updated_at": "2022-04-12T03:26:52.198Z"
-            }
-          ],
-          "images": [
-            {
-              "id": 7,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.252Z",
-              "updated_at": "2022-04-12T03:26:52.252Z"
-            },
-            {
-              "id": 8,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.252Z",
-              "updated_at": "2022-04-12T03:26:52.252Z"
-            },
-            {
-              "id": 9,
-              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236",
-              "product_id": 1,
-              "created_at": "2022-04-12T03:26:52.252Z",
-              "updated_at": "2022-04-12T03:26:52.252Z"
-            }
-          ]
-        }
-      ]
+      "products": [{
+        "id": 2,
+        "name": "10.9-inch iPad Air Wi-Fi 64GB - Space Gray",
+        "code": "T001",
+        "brand": "Apple",
+        "description": "iPad Air lets you immerse yourself in whatever you're reading, watching, or creating. The 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps, and make payments securely with Apple Pay. And iPad Air comes in five gorgeous colors.",
+        "price": 599,
+        "created_at": "2022-04-12T03:26:52.252Z",
+        "updated_at": "2022-04-12T03:26:52.252Z",
+        "categories": [{
+          "id": 1,
+          "name": "Tablets",
+          "created_at": "2022-04-12T03:26:52.198Z",
+          "updated_at": "2022-04-12T03:26:52.198Z"
+        }],
+        "images": [{
+            "id": 7,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.252Z",
+            "updated_at": "2022-04-12T03:26:52.252Z"
+          },
+          {
+            "id": 8,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.252Z",
+            "updated_at": "2022-04-12T03:26:52.252Z"
+          },
+          {
+            "id": 9,
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236",
+            "product_id": 1,
+            "created_at": "2022-04-12T03:26:52.252Z",
+            "updated_at": "2022-04-12T03:26:52.252Z"
+          }
+        ]
+      }]
     }
   ],
   "line_items": [
@@ -341,43 +326,114 @@
       "line_items": [
         {
           "id": 1,
-          "order_id": 1,
-          "cart_id": null,
-          "product_id": 1,
-          "amount": 10,
-          "disscount": 0,
-          "created_at": "2022-04-12T03:26:52.395Z",
-          "updated_at": "2022-04-12T03:26:52.395Z",
-          "product": {
-            "id": 1,
-            "name": "Coffee",
-            "code": "C001",
-            "brand": "Starbucks",
-            "price": 1,
-            "created_at": "2022-04-12T03:26:52.242Z",
-            "updated_at": "2022-04-12T03:26:52.242Z"
-          }
+          "name": "Airpods (3rd generation)",
+          "subtitle": "Astonishing wireless. Unbeatable performance.",
+          "code": "C001",
+          "brand": "Apple",
+          "description": "All-new design AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 percent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls. Spatial audio with dynamic head tracking Sound is placed all around you to create an immersive, three-dimensional listening experience for music, TV shows, and movies. Gyroscopes and accelerometers in AirPods work together to track your head movements — so it sounds like you're in the center of songs and scenes.",
+          "price": 179,
+          "created_at": "2022-04-12T03:26:52.242Z",
+          "updated_at": "2022-04-12T03:26:52.242Z",
+          "categories": [
+            {
+              "id": 1,
+              "name": "Earphones",
+              "created_at": "2022-04-12T03:26:52.198Z",
+              "updated_at": "2022-04-12T03:26:52.198Z"
+            },
+            {
+              "id": 2,
+              "name": "Music",
+              "created_at": "2022-04-12T03:26:52.223Z",
+              "updated_at": "2022-04-12T03:26:52.223Z"
+            }
+          ],
+          "images": [
+            {
+              "id": 1,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-gen3-key-features-design-202110?wid=572&hei=572&fmt=png-alpha&.v=1632934708000",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            },
+            {
+              "id": 2,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861333000",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            },
+            {
+              "id": 3,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861338000",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            },
+            {
+              "id": 4,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            },
+            {
+              "id": 5,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV4?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            },
+            {
+              "id": 6,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV5?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1633733312000",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            }
+          ]
         },
         {
           "id": 2,
-          "order_id": 1,
-          "cart_id": null,
-          "product_id": 2,
-          "amount": 2,
-          "disscount": 0.2,
-          "created_at": "2022-04-12T03:26:52.406Z",
-          "updated_at": "2022-04-12T03:26:52.406Z",
-          "product": {
-            "id": 2,
-            "name": "Tea",
-            "code": "T001",
-            "brand": "Starbucks",
-            "price": 2,
-            "created_at": "2022-04-12T03:26:52.252Z",
-            "updated_at": "2022-04-12T03:26:52.252Z"
-          }
+          "subtitle": "The Best Table",
+          "name": "10.9-inch iPad Air",
+          "code": "T001",
+          "brand": "Apple",
+          "description": "iPad Air lets you immerse yourself in whatever you're reading, watching, or creating. The 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps, and make payments securely with Apple Pay. And iPad Air comes in five gorgeous colors.",
+          "price": 599,
+          "created_at": "2022-04-12T03:26:52.252Z",
+          "updated_at": "2022-04-12T03:26:52.252Z",
+          "categories": [{
+            "id": 1,
+            "name": "Tablets",
+            "created_at": "2022-04-12T03:26:52.198Z",
+            "updated_at": "2022-04-12T03:26:52.198Z"
+          }],
+          "images": [{
+              "id": 7,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            },
+            {
+              "id": 8,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            },
+            {
+              "id": 9,
+              "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236",
+              "product_id": 1,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            }
+          ]
         }
-      ]
+      ],
+      "total": 1500
     },
     {
       "id": 2,
@@ -385,75 +441,340 @@
       "updated_at": "2022-04-12T03:26:52.378Z",
       "line_items": [
         {
+        "id": 3,
+        "order_id": 2,
+        "cart_id": null,
+        "product_id": 3,
+        "amount": 3,
+        "disscount": 0.5,
+        "created_at": "2022-04-12T03:26:52.417Z",
+        "updated_at": "2022-04-12T03:26:52.417Z",
+        "product": {
           "id": 3,
-          "order_id": 2,
-          "cart_id": null,
-          "product_id": 3,
-          "amount": 3,
-          "disscount": 0.5,
-          "created_at": "2022-04-12T03:26:52.417Z",
-          "updated_at": "2022-04-12T03:26:52.417Z",
-          "product": {
-            "id": 3,
-            "name": "Cake",
-            "code": "K001",
-            "brand": "Starbucks",
-            "price": 3,
-            "created_at": "2022-04-12T03:26:52.263Z",
-            "updated_at": "2022-04-12T03:26:52.263Z"
-          }
+          "name": "Cake",
+          "code": "K001",
+          "brand": "Starbucks",
+          "price": 3,
+          "created_at": "2022-04-12T03:26:52.263Z",
+          "updated_at": "2022-04-12T03:26:52.263Z"
         }
-      ]
+      }
+      ],
+      "total": 500
     }
   ],
   "carts": [
     {
-      "id": 1,
-      "created_at": "2022-04-12T03:26:52.355Z",
-      "updated_at": "2022-04-12T03:26:52.355Z",
-      "line_items": [
-        {
-          "id": 4,
-          "order_id": null,
-          "cart_id": 1,
-          "product_id": 1,
-          "amount": 10,
-          "disscount": 0,
-          "created_at": "2022-04-12T03:26:52.427Z",
-          "updated_at": "2022-04-12T03:26:52.427Z",
-          "product": {
-            "id": 1,
-            "name": "Coffee",
-            "code": "C001",
-            "brand": "Starbucks",
-            "price": 1,
-            "created_at": "2022-04-12T03:26:52.242Z",
-            "updated_at": "2022-04-12T03:26:52.242Z"
-          }
-        },
-        {
-          "id": 5,
-          "order_id": null,
-          "cart_id": 1,
-          "product_id": 2,
-          "amount": 2,
-          "disscount": 0.2,
-          "created_at": "2022-04-12T03:26:52.438Z",
-          "updated_at": "2022-04-12T03:26:52.438Z",
-          "product": {
-            "id": 2,
-            "name": "Tea",
-            "code": "T001",
-            "brand": "Starbucks",
-            "price": 2,
-            "created_at": "2022-04-12T03:26:52.252Z",
-            "updated_at": "2022-04-12T03:26:52.252Z"
-          }
+    "id": 1,
+    "created_at": "2022-04-12T03:26:52.355Z",
+    "updated_at": "2022-04-12T03:26:52.355Z",
+    "line_items": [{
+        "id": 4,
+        "order_id": null,
+        "cart_id": 1,
+        "product_id": 1,
+        "amount": 10,
+        "disscount": 0,
+        "created_at": "2022-04-12T03:26:52.427Z",
+        "updated_at": "2022-04-12T03:26:52.427Z",
+        "product": {
+          "id": 1,
+          "name": "Coffee",
+          "code": "C001",
+          "brand": "Starbucks",
+          "price": 1,
+          "created_at": "2022-04-12T03:26:52.242Z",
+          "updated_at": "2022-04-12T03:26:52.242Z"
         }
-      ]
+      },
+      {
+        "id": 5,
+        "order_id": null,
+        "cart_id": 1,
+        "product_id": 2,
+        "amount": 2,
+        "disscount": 0.2,
+        "created_at": "2022-04-12T03:26:52.438Z",
+        "updated_at": "2022-04-12T03:26:52.438Z",
+        "product": {
+          "id": 2,
+          "name": "Tea",
+          "code": "T001",
+          "brand": "Starbucks",
+          "price": 2,
+          "created_at": "2022-04-12T03:26:52.252Z",
+          "updated_at": "2022-04-12T03:26:52.252Z"
+        }
+      }
+    ]
+  }],
+  "coupons": [
+    {
+      "category": {
+        "id": 1,
+        "name": "earphones",
+        "created_at": "2022-05-18T01:43:00.809Z",
+        "updated_at": "2022-05-18T01:43:00.809Z"
+      },
+      "code": "SUPER-PROMO",
+      "active": false,
+      "expiryDate": "2022-05-18T01:43:00.809Z"
     }
   ],
-  "ola": {
-    "chao": "chao"
-  }
+  "user": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@doe.com",
+      "orders": [{
+        "id": 1,
+        "created_at": "2022-04-12T03:26:52.368Z",
+        "updated_at": "2022-04-12T03:26:52.368Z",
+        "line_items": [
+          {
+            "id": 1,
+            "order_id": 1,
+            "cart_id": null,
+            "amount": 10,
+            "discount": 0,
+            "product": {
+              "id": 1,
+              "name": "Airpods (3rd generation)",
+              "subtitle": "Astonishing wireless. Unbeatable performance.",
+              "code": "C001",
+              "brand": "Apple",
+              "description": "All-new design AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 percent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls. Spatial audio with dynamic head tracking Sound is placed all around you to create an immersive, three-dimensional listening experience for music, TV shows, and movies. Gyroscopes and accelerometers in AirPods work together to track your head movements — so it sounds like you're in the center of songs and scenes.",
+              "price": 179,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z",
+              "categories": [
+                {
+                  "id": 1,
+                  "name": "Earphones",
+                  "created_at": "2022-04-12T03:26:52.198Z",
+                  "updated_at": "2022-04-12T03:26:52.198Z"
+                },
+                {
+                  "id": 2,
+                  "name": "Music",
+                  "created_at": "2022-04-12T03:26:52.223Z",
+                  "updated_at": "2022-04-12T03:26:52.223Z"
+                }
+              ],
+              "images": [
+                {
+                  "id": 1,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-gen3-key-features-design-202110?wid=572&hei=572&fmt=png-alpha&.v=1632934708000",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.242Z",
+                  "updated_at": "2022-04-12T03:26:52.242Z"
+                },
+                {
+                  "id": 2,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861333000",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.242Z",
+                  "updated_at": "2022-04-12T03:26:52.242Z"
+                },
+                {
+                  "id": 3,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861338000",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.242Z",
+                  "updated_at": "2022-04-12T03:26:52.242Z"
+                },
+                {
+                  "id": 4,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.242Z",
+                  "updated_at": "2022-04-12T03:26:52.242Z"
+                },
+                {
+                  "id": 5,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV4?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861336000",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.242Z",
+                  "updated_at": "2022-04-12T03:26:52.242Z"
+                },
+                {
+                  "id": 6,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV5?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1633733312000",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.242Z",
+                  "updated_at": "2022-04-12T03:26:52.242Z"
+                }
+              ]
+            },
+            "created_at": "2022-04-12T03:26:52.395Z",
+            "updated_at": "2022-04-12T03:26:52.395Z"
+          },
+          {
+            "id": 2,
+            "order_id": 1,
+            "cart_id": null,
+            "amount": 2,
+            "discount": 0.2,
+            "product": {
+              "id": 2,
+              "subtitle": "The Best Table",
+              "name": "10.9-inch iPad Air",
+              "code": "T001",
+              "brand": "Apple",
+              "description": "iPad Air lets you immerse yourself in whatever you're reading, watching, or creating. The 10.9-inch Liquid Retina display features advanced technologies like True Tone, P3 wide color, and an antireflective coating.Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps, and make payments securely with Apple Pay. And iPad Air comes in five gorgeous colors.",
+              "price": 599,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z",
+              "categories": [{
+                "id": 1,
+                "name": "Tablets",
+                "created_at": "2022-04-12T03:26:52.198Z",
+                "updated_at": "2022-04-12T03:26:52.198Z"
+              }],
+              "images": [{
+                  "id": 7,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.252Z",
+                  "updated_at": "2022-04-12T03:26:52.252Z"
+                },
+                {
+                  "id": 8,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.252Z",
+                  "updated_at": "2022-04-12T03:26:52.252Z"
+                },
+                {
+                  "id": 9,
+                  "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236",
+                  "product_id": 1,
+                  "created_at": "2022-04-12T03:26:52.252Z",
+                  "updated_at": "2022-04-12T03:26:52.252Z"
+                }
+              ]
+            },
+            "created_at": "2022-04-12T03:26:52.406Z",
+            "updated_at": "2022-04-12T03:26:52.406Z"
+          }
+        ],
+        "coupons": [{
+          "category": {
+            "id": 1,
+            "name": "earphones",
+            "created_at": "2022-05-18T01:43:00.809Z",
+            "updated_at": "2022-05-18T01:43:00.809Z"
+          },
+          "code": "SUPER-PROMO",
+          "active": false,
+          "discount": 0.5,
+          "expiryDate": "2022-05-18T01:43:00.809Z"
+        }],
+        "discounts": 400,
+        "total": 1500
+      }]
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "email": "jane@doe.com",
+      "orders": [{
+        "id": 1,
+        "created_at": "2022-04-12T03:26:52.368Z",
+        "updated_at": "2022-04-12T03:26:52.368Z",
+        "line_items": [
+          {
+            "id": 1,
+            "order_id": 1,
+            "cart_id": null,
+            "product_id": 1,
+            "amount": 10,
+            "disscount": 0,
+            "created_at": "2022-04-12T03:26:52.395Z",
+            "updated_at": "2022-04-12T03:26:52.395Z",
+            "product": {
+              "id": 1,
+              "name": "Coffee",
+              "code": "C001",
+              "brand": "Starbucks",
+              "price": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            }
+          },
+          {
+            "id": 2,
+            "order_id": 1,
+            "cart_id": null,
+            "product_id": 2,
+            "amount": 2,
+            "disscount": 0.2,
+            "created_at": "2022-04-12T03:26:52.406Z",
+            "updated_at": "2022-04-12T03:26:52.406Z",
+            "product": {
+              "id": 2,
+              "name": "Tea",
+              "code": "T001",
+              "brand": "Starbucks",
+              "price": 2,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            }
+          }
+        ],
+        "total": 1500
+      }]
+    },
+    {
+      "id": 3,
+      "name": "Jack",
+      "email": "jack@doe.com",
+      "orders": [{
+        "id": 1,
+        "created_at": "2022-04-12T03:26:52.368Z",
+        "updated_at": "2022-04-12T03:26:52.368Z",
+        "line_items": [
+          {
+            "id": 1,
+            "order_id": 1,
+            "cart_id": null,
+            "product_id": 1,
+            "amount": 10,
+            "disscount": 0,
+            "created_at": "2022-04-12T03:26:52.395Z",
+            "updated_at": "2022-04-12T03:26:52.395Z",
+            "product": {
+              "id": 1,
+              "name": "Coffee",
+              "code": "C001",
+              "brand": "Starbucks",
+              "price": 1,
+              "created_at": "2022-04-12T03:26:52.242Z",
+              "updated_at": "2022-04-12T03:26:52.242Z"
+            }
+          },
+          {
+            "id": 2,
+            "order_id": 1,
+            "cart_id": null,
+            "product_id": 2,
+            "amount": 2,
+            "disscount": 0.2,
+            "created_at": "2022-04-12T03:26:52.406Z",
+            "updated_at": "2022-04-12T03:26:52.406Z",
+            "product": {
+              "id": 2,
+              "name": "Tea",
+              "code": "T001",
+              "brand": "Starbucks",
+              "price": 2,
+              "created_at": "2022-04-12T03:26:52.252Z",
+              "updated_at": "2022-04-12T03:26:52.252Z"
+            }
+          }
+        ],
+        "total": 1500
+      }]
+    }
+  ]
 }

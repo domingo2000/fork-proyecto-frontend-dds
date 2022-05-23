@@ -23,7 +23,7 @@ export const Category: React.FC<CategoryProps> = ({children, category, className
 );
 
 export const CategoryWithProducts: React.FC<CategoryProps> = (
-    {children, category},
+  {children, category},
 ) => {
   const [products, setProducts] = useState<IProduct[]>(category.products);
   const {response} = useFetchData('/products');

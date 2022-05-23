@@ -19,8 +19,8 @@ function SignIn() {
 
           <div className='w-full flex relative items-center'>
             <input className={ `bg-transparent w-full border-2 h-12 p-3 border-gray-300 ${emailSubmitted ?
-            'border-b-0 rounded-t-lg' :
-            'rounded-lg'}
+              'border-b-0 rounded-t-lg' :
+              'rounded-lg'}
             `} type='text' placeholder='Email' value={email} onChange={(event) => setEmail(event.target.value)} />
             <FontAwesomeIcon className={emailSubmitted ? 'hidden' : 'absolute w-6 h-6 right-4 cursor-pointer'}
               icon={faCircleArrowRight} onClick={() => setEmailSubmitted(true)}/>

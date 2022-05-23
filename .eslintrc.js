@@ -31,6 +31,7 @@ module.exports = {
     }],
     'require-jsdoc': 0,
     'max-len': ['error', {'code': 120}],
+    'indent': ['error', 2],
   },
   'settings': {
     'import/resolver': {

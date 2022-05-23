@@ -14,9 +14,9 @@ interface CategoryItemProps extends CategoryProps, FilterItemProps {
 }
 
 export const CategoryItem: React.FC<CategoryItemProps> = (
-    {
-      category, _key = category.name, onClick = async () => {}, onCheckedChange = async () => {},
-    },
+  {
+    category, _key = category.name, onClick = async () => {}, onCheckedChange = async () => {},
+  },
 ) => {
   const handleClick = async () => {
     await API.delete(`/categories/${category.id}`);
@@ -40,10 +40,10 @@ interface CategoryFilterBarProps extends FilterBarProps, CategoriesProps {
 }
 
 export const CategoryFilterBar: React.FC<CategoryFilterBarProps> = (
-    {
-      categories = [], onFiltersChange = async () => {}, children, onCategoryDelete = async () => {},
-      onCategoryAdd = async () => {},
-    },
+  {
+    categories = [], onFiltersChange = async () => {}, children, onCategoryDelete = async () => {},
+    onCategoryAdd = async () => {},
+  },
 ) => {
   const handleFilterChange = async (filters: Set<string>) => {
     onFiltersChange(filters);

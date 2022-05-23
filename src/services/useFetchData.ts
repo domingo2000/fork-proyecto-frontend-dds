@@ -10,9 +10,9 @@ const useFetchData = (endpoint: string) => {
     if (!response) {
       setLoading(true);
       axios.get(`http://localhost:3001${endpoint}`)
-          .then((_response) => setResponse(_response))
-          .catch((err) => setError(err))
-          .finally(() => setLoading(false));
+        .then((_response) => setResponse(_response))
+        .catch((err) => setError(err))
+        .finally(() => setLoading(false));
     }
   }, []);
 
