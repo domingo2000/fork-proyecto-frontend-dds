@@ -11,7 +11,7 @@ function Coupons() {
   const {
     response,
     loading,
-  } = useFetchData('/user/1');
+  } = useFetchData('/users/1');
 
   useEffect(() => {
     if (response) {

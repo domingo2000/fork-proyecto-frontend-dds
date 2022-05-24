@@ -518,7 +518,7 @@
       },
       "code": "SUPER-PROMO",
       "active": false,
-      "expiryDate": "2022-05-18T01:43:00.809Z"
+      "expiry_date": "2022-05-18T01:43:00.809Z"
     }
   ],
   "user": [
@@ -668,7 +668,7 @@
           "code": "SUPER-PROMO",
           "active": false,
           "discount": 0.5,
-          "expiryDate": "2022-05-18T01:43:00.809Z"
+          "expiry_date": "2022-05-18T01:43:00.809Z"
         }],
         "discounts": 400,
         "total": 1500
@@ -684,7 +684,7 @@
         "redeemed": false,
         "active": false,
         "discount": 0.5,
-        "expiryDate": "2022-05-18T01:43:00.809Z"
+        "expiry_date": "2022-05-18T01:43:00.809Z"
       },
       {
         "category": {
@@ -697,7 +697,7 @@
         "redeemed": true,
         "active": false,
         "discount": 0.5,
-        "expiryDate": "2022-05-18T01:43:00.809Z"
+        "expiry_date": "2022-05-18T01:43:00.809Z"
       },
       {
         "category": {
@@ -710,7 +710,7 @@
         "redeemed": false,
         "active": true,
         "discount": 0.4,
-        "expiryDate": "2022-05-18T01:43:00.809Z"
+        "expiry_date": "2022-05-18T01:43:00.809Z"
       },
       {
         "category": {
@@ -723,7 +723,7 @@
         "redeemed": true,
         "active": true,
         "discount": 0.8,
-        "expiryDate": "2022-05-18T01:43:00.809Z"
+        "expiry_date": "2022-05-18T01:43:00.809Z"
       }]
     },
     {

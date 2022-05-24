@@ -7,7 +7,7 @@ interface Coupon {
   active: boolean
   redeemed: boolean
   discount: number
-  expiryDate: string
+  expiry_date: string
 }
 
 export interface ICoupon extends Coupon, IMeta {}
