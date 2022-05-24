@@ -34,7 +34,7 @@ function CouponCard({coupon}: IProps) {
 
       {
         couponStatus === 'active' ? (
-          <h1>Expiration: {coupon.expiryDate.slice(0, 10)}</h1>
+          <h1>Expiration: {coupon.expiry_date.slice(0, 10)}</h1>
         ) : null
       }
 
