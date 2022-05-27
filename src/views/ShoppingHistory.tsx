@@ -10,7 +10,7 @@ function ShoppingHistory() {
   const {
     response,
     loading,
-  } = useFetchData('/users/1'); // TODO call /users/1/history in API
+  } = useFetchData('/users/1');
 
   useEffect(() => {
     if (response) {
