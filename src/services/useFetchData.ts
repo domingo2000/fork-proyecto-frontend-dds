@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios, {AxiosError, AxiosResponse} from 'axios';
+import config from '../config/config';
 
 const useFetchData = (endpoint: string) => {
   const [response, setResponse] = useState<AxiosResponse>();
@@ -9,7 +10,7 @@ const useFetchData = (endpoint: string) => {
   useEffect(() => {
     if (!response) {
       setLoading(true);
-      axios.get(`http://localhost:3001${endpoint}`)
+      axios.get(`${config.API_URL}${endpoint}`)
         .then((_response) => setResponse(_response))
         .catch((err) => setError(err))
         .finally(() => setLoading(false));

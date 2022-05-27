@@ -9,6 +9,7 @@ interface Product {
   code: string
   price: number
   brand: string
+  image_url: string
   categories: ICategory[],
   images: IImage[],
 }

@@ -13,7 +13,7 @@ function HistoryProducts({order}: IProps) {
         <div key={lineItem.id} className='flex h-28 w-full my-3 p-2 rounded-md shadow-lg'>
           <div className=''>
             <img className='w-28 h-full object-contain drop-shadow-md'
-              src={lineItem.product.images[0].url} alt={lineItem.product.name}/>
+              src={lineItem.product.image_url} alt={lineItem.product.name}/>
           </div>
           <div className='receipt-product-info'>
             <div className='receipt-product-title'>

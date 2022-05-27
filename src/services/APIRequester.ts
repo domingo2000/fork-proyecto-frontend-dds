@@ -1,10 +1,11 @@
 import axios from 'axios';
 import {ICategory} from '../interfaces/ICategory';
 import {IProduct} from '../interfaces/IProduct';
+import config from '../config/config';
 
 class APIRequester {
   static axios = axios.create({
-    baseURL: 'http://localhost:3001',
+    baseURL: config.API_URL,
     timeout: 1000,
     headers: {
       'Content-Type': 'application/json',
