@@ -6,12 +6,12 @@ export interface FilterItemButtonProps extends FilterItemProps, ButtonProps {}
 
 export const FilterItemButton: React.FC<FilterItemButtonProps> = (
   {
-    children, _key, onCheckedChange = () => {}, onClick = async () => {},
+    children, name, onCheckedChange = () => {}, onClick = async () => {},
   },
 ) => {
   return (
     <div>
-      <FilterItem _key={_key} onCheckedChange={onCheckedChange}>
+      <FilterItem key={name} name={name} onCheckedChange={onCheckedChange}>
         <Button onClick={onClick}>Delete</Button>
       </FilterItem>
       {children}

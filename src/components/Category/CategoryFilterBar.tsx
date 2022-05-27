@@ -13,11 +13,8 @@ interface CategoryItemProps extends CategoryProps, FilterItemProps {
   onClick?: (category: ICategory) => Promise<any>;
 }
 
-export const CategoryItem: React.FC<CategoryItemProps> = (
-  {
-    category, _key = category.name, onClick = async () => {}, onCheckedChange = async () => {},
-  },
-) => {
+export function CategoryItem({category, name, onClick = async () => {}, onCheckedChange = async () => {}}:
+  CategoryItemProps) {
   const handleClick = async () => {
     await API.delete(`/categories/${category.id}`);
     await onClick(category);
@@ -28,23 +25,22 @@ export const CategoryItem: React.FC<CategoryItemProps> = (
   };
 
   return (
-    <FilterItem _key={_key} onCheckedChange={handleCheckedChange}>
+    <FilterItem key={name} name={name} onCheckedChange={handleCheckedChange}>
       <Button onClick={handleClick}>Delete</Button>
     </FilterItem>
   );
 };
 
 interface CategoryFilterBarProps extends FilterBarProps, CategoriesProps {
-  onCategoryDelete?: (category: ICategory) => any;
+  categories: ICategory[]
+  onFiltersChange: (filters: Set<string>) => void
+  children?: React.ReactNode
+  onCategoryDelete: (category: ICategory) => any;
   onCategoryAdd? : (category: ICategory) => any;
 }
 
-export const CategoryFilterBar: React.FC<CategoryFilterBarProps> = (
-  {
-    categories = [], onFiltersChange = async () => {}, children, onCategoryDelete = async () => {},
-    onCategoryAdd = async () => {},
-  },
-) => {
+export function CategoryFilterBar({categories, onFiltersChange, children, onCategoryDelete, onCategoryAdd= () => {}}:
+  CategoryFilterBarProps) {
   const handleFilterChange = async (filters: Set<string>) => {
     onFiltersChange(filters);
   };
@@ -61,7 +57,7 @@ export const CategoryFilterBar: React.FC<CategoryFilterBarProps> = (
     <div>
       <FilterBar onFiltersChange={handleFilterChange}>
         {categories.map((category) => (
-          <CategoryItem key={category.id} category={category} onClick={handleClick} />
+          <CategoryItem key={category.id} name={category.name} category={category} onClick={handleClick} />
         ))}
         <CategoryAddInput onCategoryAdd={handleCategoryAdd} />
       </FilterBar>
