@@ -16,7 +16,7 @@ function HistoryOrderTotal({order}: IProps) {
                 <h3>Subtotal</h3>
               </td>
               <td className='flex justify-end'>
-                <h3>{order.total}.00</h3>
+                <h3>${order.subtotal}</h3>
               </td>
             </tr>
             <tr>
@@ -24,7 +24,7 @@ function HistoryOrderTotal({order}: IProps) {
                 <h3>Discounts</h3>
               </td>
               <td className='flex justify-end'>
-                <h3>{order.discounts}.00</h3>
+                <h3>${order.discounts}</h3>
               </td>
             </tr>
             <tr>
@@ -32,7 +32,7 @@ function HistoryOrderTotal({order}: IProps) {
                 <h3>Taxes</h3>
               </td>
               <td className='flex justify-end'>
-                <h3>{Math.round(order.total * 0.19 * 100) / 100}</h3>
+                <h3>${order.iva}</h3>
               </td>
             </tr>
             <tr>
@@ -40,7 +40,7 @@ function HistoryOrderTotal({order}: IProps) {
                 <h3>Total</h3>
               </td>
               <td className='flex justify-end'>
-                <h3>${Math.round(order.total * 1.19 * 100) / 100}</h3>
+                <h3>${order.total}</h3>
               </td>
             </tr>
           </tbody>
