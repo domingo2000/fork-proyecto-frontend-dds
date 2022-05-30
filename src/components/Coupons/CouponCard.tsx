@@ -10,7 +10,6 @@ function CouponCard({coupon}: IProps) {
   const [couponStatus, setCouponStatus] = useState<string>('loading');
 
   useEffect(() => {
-    console.log(coupon);
     if (coupon.redeemed) {
       setCouponStatus('redeemed');
     } else if (!coupon.active) {
