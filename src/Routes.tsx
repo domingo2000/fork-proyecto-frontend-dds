@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import SignIn from './views/SignIn';
 import Register from './views/Register';
 import Coupons from './views/Coupons';
+import Admin from './views/Admin';
 
 export default function Router() {
   return (
@@ -20,7 +21,6 @@ export default function Router() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="categories" element={<CategoriesView />}> </Route>
         <Route path="products" element={<Outlet/>}>
           <Route path=":id" element={<div>
             Hola
@@ -35,6 +35,10 @@ export default function Router() {
         <Route path="/checkout-completed" element={<CheckoutCompleted />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
+
+        <Route path="/admin" element={<Admin/>} >
+          <Route path="categories" element={<CategoriesView />}> </Route>
+        </Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
