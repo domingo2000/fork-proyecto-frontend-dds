@@ -3,8 +3,11 @@ import APIRequester from '../../services/APIRequester';
 import {IOrder} from '../../interfaces/IOrder';
 import {ICoupon} from '../../interfaces/ICoupon';
 import {IUser} from '../../interfaces/IUser';
+import {IProduct} from '../../interfaces/IProduct';
+import {ICategory} from '../../interfaces/ICategory';
+import {Link} from 'react-router-dom';
 
-interface IItem extends IOrder, ICoupon, IUser {};
+interface IItem extends IOrder, ICoupon, IUser, IProduct, ICategory {};
 
 function AdminResourceIndex({resource}: {resource: string}) {
   const [items, setItems] = useState<IItem[]>([]);
@@ -46,7 +49,7 @@ function AdminResourceIndex({resource}: {resource: string}) {
                     <td key={i} className="border px-4 py-2">{value}</td>
                   ))}
                 <td className="border px-4 py-2">
-                  <button>Show</button>
+                  <Link to={`/admin/${resource}/${item.id}`}>Show</Link>
                 </td>
                 <td className="border px-4 py-2">
                   <button>Edit</button>
