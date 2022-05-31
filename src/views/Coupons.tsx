@@ -26,7 +26,7 @@ function Coupons() {
 
       {loading && <p>Loading...</p>}
       <CouponsList activeCoupons={activeCoupons} inactiveCoupons={coupons}/>
-      <AddCoupon/>
+      <AddCoupon coupons={activeCoupons} setCoupons={setActiveCoupons} />
     </div>
   );
 }

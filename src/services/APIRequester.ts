@@ -41,6 +41,10 @@ class APIRequester {
     return APIRequester.axios.post('/coupons', coupon);
   }
 
+  static async addCouponToUser(couponCode: string) {
+    return await APIRequester.axios.post('/users/1/coupons', {coupon_code: couponCode});
+  }
+
   static editProduct(id: number, product : IProduct) {
     return APIRequester.axios.put(`/categories/${id}`, product);
   }
