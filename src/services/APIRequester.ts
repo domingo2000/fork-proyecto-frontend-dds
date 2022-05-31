@@ -1,6 +1,7 @@
 import axios from 'axios';
-import {ICategory} from '../interfaces/ICategory';
-import {IProduct} from '../interfaces/IProduct';
+import {ICategory, ICreateCategory} from '../interfaces/ICategory';
+import {IProduct, ICreateProduct} from '../interfaces/IProduct';
+import {ICreateCoupon} from '../interfaces/ICoupon';
 import config from '../config/config';
 
 class APIRequester {
@@ -28,12 +29,16 @@ class APIRequester {
     return APIRequester.axios.delete(url, {data});
   }
 
-  static createProduct(product: IProduct) {
+  static createProduct(product: ICreateProduct) {
     return APIRequester.axios.post('/products', product);
   }
 
-  static createCategory(category: ICategory) {
+  static createCategory(category: ICreateCategory) {
     return APIRequester.axios.post('/categories', category);
+  }
+
+  static createCoupon(coupon: ICreateCoupon) {
+    return APIRequester.axios.post('/coupons', coupon);
   }
 
   static editProduct(id: number, product : IProduct) {
