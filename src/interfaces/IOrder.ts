@@ -4,9 +4,11 @@ import {IMeta} from './IMeta';
 
 export interface IOrderBody {
   line_items: ILineItem[]
+  iva: number
+  discounts: number
+  subtotal: number
   total: number
   coupons: ICoupon[]
-  discounts: number
 }
 
 export interface IOrder extends IOrderBody, IMeta {};
