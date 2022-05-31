@@ -53,7 +53,7 @@ function AdminResourceIndex({resource}: {resource: string}) {
               <tr key={item.id}>
                 {Object.entries(item).filter(([key, value]) => filterItems(key, value))
                   .map(([key, value], i) => (
-                    <td key={i} className="border px-4 py-2">{value}</td>
+                    <td key={i} className="border px-4 py-2">{value as String}</td>
                   ))}
                 <td className="border px-4 py-2">
                   <Link to={`/admin/${resource}/${item.id}`}>Show</Link>
@@ -61,7 +61,7 @@ function AdminResourceIndex({resource}: {resource: string}) {
                 {
                   resource !== 'users' &&
                   <td className="border px-4 py-2">
-                    <button>Edit</button>
+                    <Link to={`/admin/${resource}/${item.id}/edit`}>Edit</Link>
                   </td>
                 }
                 <td className="border px-4 py-2 bg-red-600 text-white">
