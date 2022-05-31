@@ -6,6 +6,9 @@ import {IUser} from '../../interfaces/IUser';
 import {IProduct} from '../../interfaces/IProduct';
 import {ICategory} from '../../interfaces/ICategory';
 import {Link} from 'react-router-dom';
+import CreateCoupon from './Create/CreateCoupon';
+import CreateCategory from './Create/CreateCategory';
+import CreateProduct from './Create/CreateProduct';
 
 interface IItem extends IOrder, ICoupon, IUser, IProduct, ICategory {};
 
@@ -31,6 +34,10 @@ function AdminResourceIndex({resource}: {resource: string}) {
 
   return (
     <div className='min-h-[70vh] border-4'>
+      {resource === 'coupons' && <CreateCoupon />}
+      {resource === 'categories' && <CreateCategory/>}
+      {resource === 'products' && <CreateProduct/>}
+
       {!items[0] && <h1 className='text-2xl font-bold my-6'>There aren&apos;t any {resource} created</h1>}
       <table className="table-auto">
         <thead>
@@ -51,9 +58,12 @@ function AdminResourceIndex({resource}: {resource: string}) {
                 <td className="border px-4 py-2">
                   <Link to={`/admin/${resource}/${item.id}`}>Show</Link>
                 </td>
-                <td className="border px-4 py-2">
-                  <button>Edit</button>
-                </td>
+                {
+                  resource !== 'users' &&
+                  <td className="border px-4 py-2">
+                    <button>Edit</button>
+                  </td>
+                }
                 <td className="border px-4 py-2 bg-red-600 text-white">
                   <button onClick={() => deleteResource(item.id)} >Delete</button>
                 </td>
