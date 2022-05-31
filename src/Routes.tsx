@@ -41,7 +41,7 @@ export default function Router() {
 
         <Route path="admin" element={<Outlet/>} >
           <Route index element={<Admin childComponent={(resource) => <AdminResourceIndex resource={resource}/>}/>} />
-          <Route path="categories" element={<CategoriesView />}> </Route>
+          <Route path="product-categories" element={<CategoriesView />}> </Route>
           <Route path=":resource/:id/edit" element={<Admin showNavBar={false}
             childComponent={() => <AdminResourceEdit/>} />} />
           <Route path=":resource/:id" element={<Admin showNavBar={false}

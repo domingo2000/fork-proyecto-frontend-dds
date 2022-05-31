@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 function Admin({childComponent, showNavBar=true}:
   {childComponent: (resource:string) => JSX.Element, showNavBar?: boolean}) {
@@ -23,6 +24,11 @@ function Admin({childComponent, showNavBar=true}:
           </li>
           <li className='cursor-pointer p-2 border-2 border-blue-200 rounded-md mx-1'
             onClick={() => setResource('categories')}>Categories
+          </li>
+          <li className='cursor-pointer p-2 border-2 border-blue-200 rounded-md mx-1'>
+            <Link to='/admin/product-categories' className='text-black'>
+              Product Categories
+            </Link>
           </li>
         </ul>
       }
