@@ -16,6 +16,7 @@ import Coupons from './views/Coupons';
 import Admin from './views/Admin';
 import AdminResourceShow from './components/Admin/AdminResourceShow';
 import AdminResourceIndex from './components/Admin/AdminResourceIndex';
+import AdminResourceEdit from './components/Admin/AdminResourceEdit';
 
 export default function Router() {
   return (
@@ -41,10 +42,10 @@ export default function Router() {
         <Route path="admin" element={<Outlet/>} >
           <Route index element={<Admin childComponent={(resource) => <AdminResourceIndex resource={resource}/>}/>} />
           <Route path="categories" element={<CategoriesView />}> </Route>
+          <Route path=":resource/:id/edit" element={<Admin showNavBar={false}
+            childComponent={() => <AdminResourceEdit/>} />} />
           <Route path=":resource/:id" element={<Admin showNavBar={false}
             childComponent={() => <AdminResourceShow/>} />} />
-          <Route path="orders">
-          </Route>
         </Route>
       </Routes>
       <Footer/>
