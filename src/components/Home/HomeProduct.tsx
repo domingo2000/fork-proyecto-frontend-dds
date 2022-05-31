@@ -25,7 +25,7 @@ function HomeProduct({product}: IProps) {
         </Link>
       </div>
 
-      <img className='flex mt-4 self-center object-scale-down' src={product.images[0].url} alt={product.name} />
+      <img className='flex mt-4 self-center object-scale-down' src={product.image_url} alt={product.name} />
     </div>
   );
 }
