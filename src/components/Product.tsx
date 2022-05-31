@@ -10,7 +10,7 @@ export const ProductRaw: React.FC<ProductRawProps> = ({product, children}) => {
   return (
     <div className="flex w-full h-44">
       <div className="">
-        <img className='object-contain h-full w-40' src={product.images[0].url} alt="" />
+        <img className='object-contain h-full w-40' src={product.image_url} alt="" />
       </div>
       {children}
     </div>
