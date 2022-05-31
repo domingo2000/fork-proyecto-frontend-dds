@@ -15,7 +15,6 @@ function ShoppingHistory() {
   useEffect(() => {
     if (response) {
       setHistory(response.data.orders);
-      console.log(response.data.orders);
     }
   }, [response]);
 
