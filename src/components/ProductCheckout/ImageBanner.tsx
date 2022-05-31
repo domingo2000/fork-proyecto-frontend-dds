@@ -5,7 +5,7 @@ import {IProduct} from '../../interfaces/IProduct';
 
 
 function ImageBanner({product}: {product: IProduct}) {
-  const [selectedImageURL, setSelectedImageURL] = useState<string>(product.images[0].url);
+  const [selectedImageURL, setSelectedImageURL] = useState<string>(product.image_url);
   const mainImageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {

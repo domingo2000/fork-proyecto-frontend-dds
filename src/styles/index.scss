@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import './app';
 @import './productCheckout.css';
 @import './Bag.css';
@@ -10,9 +13,6 @@
 @import './product-index';
 @import './ui-search';
 @import './filter-bar';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 * {

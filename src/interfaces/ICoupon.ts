@@ -10,4 +10,14 @@ interface Coupon {
   expiry_date: string
 }
 
+
+export interface ICreateCoupon {
+  code: string
+  discount: number
+  redeemed: boolean
+  active: boolean
+  expiry_date: string
+  category_id: number
+}
+
 export interface ICoupon extends Coupon, IMeta {}

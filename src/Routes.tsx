@@ -13,6 +13,10 @@ import Footer from './components/Footer';
 import SignIn from './views/SignIn';
 import Register from './views/Register';
 import Coupons from './views/Coupons';
+import Admin from './views/Admin';
+import AdminResourceShow from './components/Admin/AdminResourceShow';
+import AdminResourceIndex from './components/Admin/AdminResourceIndex';
+import AdminResourceEdit from './components/Admin/AdminResourceEdit';
 
 export default function Router() {
   return (
@@ -20,7 +24,6 @@ export default function Router() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="categories" element={<CategoriesView />}> </Route>
         <Route path="products" element={<Outlet/>}>
           <Route path=":id" element={<div>
             Hola
@@ -35,6 +38,15 @@ export default function Router() {
         <Route path="/checkout-completed" element={<CheckoutCompleted />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
+
+        <Route path="admin" element={<Outlet/>} >
+          <Route index element={<Admin childComponent={(resource) => <AdminResourceIndex resource={resource}/>}/>} />
+          <Route path="product-categories" element={<CategoriesView />}> </Route>
+          <Route path=":resource/:id/edit" element={<Admin showNavBar={false}
+            childComponent={() => <AdminResourceEdit/>} />} />
+          <Route path=":resource/:id" element={<Admin showNavBar={false}
+            childComponent={() => <AdminResourceShow/>} />} />
+        </Route>
       </Routes>
       <Footer/>
     </BrowserRouter>

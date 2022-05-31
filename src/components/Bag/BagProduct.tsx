@@ -13,7 +13,7 @@ function BagProduct({item, changeProductAmount, deleteProduct}: IProps) {
   return (
     <div className='bag-product'>
       <div className='bag-product-image'>
-        <img src={item.product.images[0].url} alt={item.product.name}/>
+        <img src={item.product.image_url} alt={item.product.name}/>
       </div>
       <div id='mobile-product-title'>
         <h1>{item.product.name}</h1>

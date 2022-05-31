@@ -3,8 +3,11 @@ import {IProduct} from './IProduct';
 
 export interface ICategoryBody {
   name: string
-  description: string
   products: IProduct[]
+}
+
+export interface ICreateCategory {
+  name: string
 }
 
 export interface ICategory extends ICategoryBody, IMeta {}

@@ -12,7 +12,7 @@ function Navbar() {
           <Link to="/products">Products</Link>
         </li>
         <li className='mx-2 text-lg hover:ring-2 p-1 rounded-md ring-gray-300'>
-          <Link to="/categories">Categories</Link>
+          <Link to="/admin">Admin</Link>
         </li>
       </ul>
 
